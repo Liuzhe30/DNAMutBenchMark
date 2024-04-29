@@ -1,0 +1,9 @@
+# middle output
+*.pyc
+*.model
+*.npy
+
+datasets/middlefile/
+
+
+# middle scripts
