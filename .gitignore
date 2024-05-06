@@ -3,7 +3,9 @@
 *.model
 *.npy
 
-datasets/middlefile/
+datasets/reference_genome_hg38/
+datasets/eqtl_datasets/raw/
+datasets/eqtl_datasets/middlefile/
 
 
 # middle scripts
