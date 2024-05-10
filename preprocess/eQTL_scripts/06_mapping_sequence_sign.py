@@ -28,7 +28,7 @@ for bulk in gtex_list:
         with open(fasta_path + chr_str + '.fasta') as fa:
             line = fa.readline()
             tss_before_seq = line[tss_position - 1001:tss_position + 1000] # maxlen = 2,001
-            tss_after_seq = tss_before_seq[0:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:]
+            tss_after_seq = line[tss_position - 1001:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:tss_position + 1000]
             data.loc[i, 'seq_before'] = tss_before_seq
             data.loc[i, 'seq_after'] = tss_after_seq
     data.to_pickle(output_path + bulk + '/small.dataset')
@@ -80,7 +80,7 @@ for bulk in gtex_list:
         with open(fasta_path + chr_str + '.fasta') as fa:
             line = fa.readline()
             tss_before_seq = line[tss_position - 10001:tss_position + 10000] # maxlen = 20,001
-            tss_after_seq = tss_before_seq[0:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:]
+            tss_after_seq = line[tss_position - 10001:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:tss_position + 10000]
             data.loc[i, 'seq_before'] = tss_before_seq
             data.loc[i, 'seq_after'] = tss_after_seq
     data.to_pickle(output_path + bulk + '/middle.dataset')
@@ -102,7 +102,7 @@ for bulk in gtex_list:
         with open(fasta_path + chr_str + '.fasta') as fa:
             line = fa.readline()
             tss_before_seq = line[tss_position - 100001:tss_position + 100000] # maxlen = 200,001
-            tss_after_seq = tss_before_seq[0:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:]
+            tss_after_seq = line[tss_position - 100001:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:tss_position + 100000]
             data.loc[i, 'seq_before'] = tss_before_seq
             data.loc[i, 'seq_after'] = tss_after_seq
     data.to_pickle(output_path + bulk + '/large.dataset')
