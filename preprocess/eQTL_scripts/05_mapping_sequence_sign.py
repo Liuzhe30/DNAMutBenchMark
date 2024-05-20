@@ -16,6 +16,7 @@ for bulk in gtex_list:
     data = pd.read_pickle(file_path + bulk + '_small.dataset')
     data['seq_before'] = 0
     data['seq_after'] = 0
+    data['seq_len'] = 0
     for i in tqdm(range(len(data))): 
         variant_id = data['variant_id'].values[i]
         chr_str = variant_id.split('_')[0]
@@ -28,13 +29,15 @@ for bulk in gtex_list:
         with open(fasta_path + chr_str + '.fasta') as fa:
             line = fa.readline()
             tss_before_seq = line[tss_position - 1001:tss_position + 1000] # maxlen = 2,001
-            tss_after_seq = line[tss_position - 1001:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:tss_position + 1000]
+            tss_after_seq = line[tss_position - 1001:position - 1] + after_mutation + line[position:tss_position + 1000]
             data.loc[i, 'seq_before'] = tss_before_seq
             data.loc[i, 'seq_after'] = tss_after_seq
+            data.loc[i, 'seq_len'] = len(tss_before_seq)
+            print(data.head())
     data.to_pickle(output_path + bulk + '/small.dataset')
 print(data.head())
 '''
-         phenotype_id             variant_id  tss_distance       maf  \
+        phenotype_id             variant_id  tss_distance       maf  \
 0   ENSG00000236423.5   chr1_3900688_T_C_b38           316  0.084098
 1   ENSG00000090432.6  chr1_20508117_C_A_b38           -44  0.134969
 2   ENSG00000228172.5  chr1_25820023_G_C_b38          -738  0.463303
@@ -55,12 +58,12 @@ print(data.head())
 3  CCGCGGTATCGGAGCCTACAGCCGCCAGCGCCTCGCCCACTCGGGG...
 4  CGGGGAGCGCGGGCCGAGACCGCCGCGGGCGCGGAGGGGGCGCCCG...
 
-                                           seq_after
-0  AGGAGAGCCTCCATGCAGCTCAGAGCCTCCCAAGTGGACCGGGACC...
-1  agcccagatcccgccactgcactccagcctgggcgacacagcaaga...
-2  CCCGCGGGGGCACGGTCTCGATGGAGGGGAGTGTGCTCCGCGGTAT...
-3  CCGCGGTATCGGAGCCTACAGCCGCCAGCGCCTCGCCCACTCGGGG...
-4  CGGGGAGCGCGGGCCGAGACCGCCGCGGGCGCGGAGGGGGCGCCCG...
+                                           seq_after  seq_len
+0  AGGAGAGCCTCCATGCAGCTCAGAGCCTCCCAAGTGGACCGGGACC...     2001
+1  agcccagatcccgccactgcactccagcctgggcgacacagcaaga...     2001
+2  CCCGCGGGGGCACGGTCTCGATGGAGGGGAGTGTGCTCCGCGGTAT...     2001
+3  CCGCGGTATCGGAGCCTACAGCCGCCAGCGCCTCGCCCACTCGGGG...     2001
+4  CGGGAAGCGCGGGCCGAGACCGCCGCGGGCGCGGAGGGGGCGCCCG...     2001
 '''
 
 # middle model
@@ -68,6 +71,7 @@ for bulk in gtex_list:
     data = pd.read_pickle(file_path + bulk + '_middle.dataset')
     data['seq_before'] = 0
     data['seq_after'] = 0
+    data['seq_len'] = 0
     for i in tqdm(range(len(data))): 
         variant_id = data['variant_id'].values[i]
         chr_str = variant_id.split('_')[0]
@@ -80,9 +84,10 @@ for bulk in gtex_list:
         with open(fasta_path + chr_str + '.fasta') as fa:
             line = fa.readline()
             tss_before_seq = line[tss_position - 10001:tss_position + 10000] # maxlen = 20,001
-            tss_after_seq = line[tss_position - 10001:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:tss_position + 10000]
+            tss_after_seq = line[tss_position - 10001:position - 1] + after_mutation + line[position:tss_position + 10000]
             data.loc[i, 'seq_before'] = tss_before_seq
             data.loc[i, 'seq_after'] = tss_after_seq
+            data.loc[i, 'seq_len'] = len(tss_before_seq)
     data.to_pickle(output_path + bulk + '/middle.dataset')
 
 # large model
@@ -90,6 +95,7 @@ for bulk in gtex_list:
     data = pd.read_pickle(file_path + bulk + '_large.dataset')
     data['seq_before'] = 0
     data['seq_after'] = 0
+    data['seq_len'] = 0
     for i in tqdm(range(len(data))): 
         variant_id = data['variant_id'].values[i]
         chr_str = variant_id.split('_')[0]
@@ -102,7 +108,8 @@ for bulk in gtex_list:
         with open(fasta_path + chr_str + '.fasta') as fa:
             line = fa.readline()
             tss_before_seq = line[tss_position - 100001:tss_position + 100000] # maxlen = 200,001
-            tss_after_seq = line[tss_position - 100001:tss_position + tss_distance - 1] + after_mutation + tss_before_seq[tss_position + tss_distance:tss_position + 100000]
+            tss_after_seq = line[tss_position - 100001:position - 1] + after_mutation + line[position:tss_position + 100000]
             data.loc[i, 'seq_before'] = tss_before_seq
             data.loc[i, 'seq_after'] = tss_after_seq
+            data.loc[i, 'seq_len'] = len(tss_before_seq)
     data.to_pickle(output_path + bulk + '/large.dataset')
