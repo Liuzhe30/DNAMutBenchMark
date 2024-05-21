@@ -8,8 +8,8 @@ from pandas import read_parquet
 from tqdm import tqdm
 pd.set_option('display.max_columns', None)
 
-sign_path = '../../datasets/eqtl_datasets/middlefile/2_mapping_sequence/sign_prediction/'
-slope_path = '../../datasets/eqtl_datasets/middlefile/2_mapping_sequence/slope_prediction/'
+sign_path = '../../datasets/eqtl_datasets/middlefile/2_mapping_sequence_post/sign_prediction/'
+slope_path = '../../datasets/eqtl_datasets/middlefile/2_mapping_sequence_post/slope_prediction/'
 output_path = '../../datasets/eqtl_datasets/middlefile/3_split_by_chr/'
 
 gtex_list = ['Heart_Left_Ventricle','Esophagus_Mucosa','Nerve_Tibial']
