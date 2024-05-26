@@ -35,36 +35,37 @@ for bulk in gtex_list:
             data.loc[i, 'seq_before'] = tss_before_seq
             data.loc[i, 'seq_after'] = tss_after_seq
             data.loc[i, 'seq_len'] = len(tss_before_seq)
+            #print(data.head())
     data.to_pickle(output_path + bulk + '/small.dataset')
 print(data.head())
 '''
-        phenotype_id              variant_id  tss_distance       maf  \
-0  ENSG00000013016.15   chr2_31235324_G_A_b38           987  0.331804
-1  ENSG00000150756.13   chr5_10245029_A_G_b38           529  0.295107
-2  ENSG00000198093.10  chr19_51905229_T_C_b38           189  0.250765
-3  ENSG00000140983.13    chr16_667544_G_C_b38          -542  0.137500
-4   ENSG00000184441.4  chr21_44330365_G_A_b38          -869  0.429664
+        phenotype_id             variant_id  tss_distance       maf  \
+0   ENSG00000236423.5   chr1_3900688_T_C_b38           316  0.084098
+1   ENSG00000090432.6  chr1_20508117_C_A_b38           -44  0.134969
+2   ENSG00000228172.5  chr1_25820023_G_C_b38          -738  0.463303
+3  ENSG00000117640.17  chr1_25820023_G_C_b38          -775  0.463303
+4  ENSG00000000938.12  chr1_27634281_G_A_b38          -996  0.067278
 
   ma_samples ma_count  pval_nominal     slope  slope_se  \
-0        181      217      0.002583 -0.125359  0.041215
-1        161      193      0.000085  0.186622  0.046767
-2        147      164      0.017496  0.113791  0.047597
-3         81       88      0.000039 -0.130446  0.031188
-4        220      281      0.000002  0.157503  0.032432
+0         52       55  1.657173e-06  0.342601  0.069935
+1         82       88  6.482217e-12  0.276024  0.038419
+2        242      303  4.628220e-23  0.513832  0.047313
+3        242      303  9.349158e-65  0.530491  0.023360
+4         42       44  2.717342e-12  0.523637  0.071486
 
                                           seq_before  \
-0  gcaaatactccttacgctcctagaacaatggatgtcaattcatcat...
-1  ctgtttagtgcagcaaccctcatcaacaatcttagctagatcttct...
-2  atgttccaactgcgttcaaataaggcaaacgccgaatggtaaccaa...
-3  GGGCTCCTCGTCTCTGGGGTGGGGTGAGGACATCTGCCCTAGAGAG...
-4  GGCCTGCAGCCGGCTGCCCACAGTCTGCTGCACGGCCTCCAGCCCC...
+0  AGGAGAGCCTCCATGCAGCTCAGAGCCTCCCAAGTGGACCGGGACC...
+1  agcccagatcccgccactgcactccagcctgggcgacacagcaaga...
+2  CCCGCGGGGGCACGGTCTCGATGGAGGGGAGTGTGCTCCGCGGTAT...
+3  CCGCGGTATCGGAGCCTACAGCCGCCAGCGCCTCGCCCACTCGGGG...
+4  CGGGGAGCGCGGGCCGAGACCGCCGCGGGCGCGGAGGGGGCGCCCG...
 
                                            seq_after  seq_len
-0  gcaaatactccttacgctcctagaacaatggatgtcaattcatcat...     2001
-1  ctgtttagtgcagcaaccctcatcaacaatcttagctagatcttct...     2001
-2  atgttccaactgcgttcaaataaggcaaacgccgaatggtaaccaa...     2001
-3  GGGCTCCTCGTCTCTGGGGTGGGGTGAGGACATCTGCCCTAGAGAG...     2001
-4  GGCCTGCAGCCGGCTGCCCACAGTCTGCTGCACGGCCTCCAGCCCC...     2001
+0  AGGAGAGCCTCCATGCAGCTCAGAGCCTCCCAAGTGGACCGGGACC...     2001
+1  agcccagatcccgccactgcactccagcctgggcgacacagcaaga...     2001
+2  CCCGCGGGGGCACGGTCTCGATGGAGGGGAGTGTGCTCCGCGGTAT...     2001
+3  CCGCGGTATCGGAGCCTACAGCCGCCAGCGCCTCGCCCACTCGGGG...     2001
+4  CGGGAAGCGCGGGCCGAGACCGCCGCGGGCGCGGAGGGGGCGCCCG...     2001
 '''
 
 # middle model

@@ -11,8 +11,8 @@ fasta_path = '../../datasets/reference_genome_hg38/'
 non_causal_path = '../../datasets/eqtl_datasets/raw/ppc_0.001_single_mutation/'
 causal_path = '../../datasets/eqtl_datasets/raw/ppc_0.9_single_mutation/'
 output_path = '../../datasets/eqtl_datasets/middlefile/1_split_tss_distance/'
-output_path2 = '../../datasets/eqtl_datasets/slope_prediction/'
-output_path3 = '../../datasets/eqtl_datasets/sign_prediction/'
+output_path2 = '../../datasets/eqtl_datasets/sign_prediction/'
+output_path3 = '../../datasets/eqtl_datasets/slope_prediction/'
 
 # non-causal mutations
 for bulk in gtex_list:
@@ -150,10 +150,28 @@ for bulk in gtex_list:
     large_final_df = pd.DataFrame()
     for label in label_list:
         data = pd.read_pickle(output_path + bulk + '_small_' + label + '.dataset')
+        if(label == 'up'):
+            data['label'] = 2
+        elif(label == 'non'):
+            data['label'] = 1
+        elif(label == 'down'):
+            data['label'] = 0
         small_final_df = pd.concat([small_final_df,data])
         data = pd.read_pickle(output_path + bulk + '_middle_' + label + '.dataset')
+        if(label == 'up'):
+            data['label'] = 2
+        elif(label == 'non'):
+            data['label'] = 1
+        elif(label == 'down'):
+            data['label'] = 0
         middle_final_df = pd.concat([middle_final_df,data])
         data = pd.read_pickle(output_path + bulk + '_large_' + label + '.dataset')
+        if(label == 'up'):
+            data['label'] = 2
+        elif(label == 'non'):
+            data['label'] = 1
+        elif(label == 'down'):
+            data['label'] = 0
         large_final_df = pd.concat([large_final_df,data])
     small_final_df = small_final_df.reset_index(drop=True)
     small_final_df.to_pickle(output_path2 + bulk + '_small.dataset')
@@ -170,22 +188,10 @@ for bulk in gtex_list:
     large_final_df = pd.DataFrame()
     for label in label_list:
         data = pd.read_pickle(output_path + bulk + '_small_' + label + '.dataset')
-        if(label == 'up'):
-            data['label'] = 1
-        else:
-            data['label'] = 0
         small_final_df = pd.concat([small_final_df,data])
         data = pd.read_pickle(output_path + bulk + '_middle_' + label + '.dataset')
-        if(label == 'up'):
-            data['label'] = 1
-        else:
-            data['label'] = 0
         middle_final_df = pd.concat([middle_final_df,data])
         data = pd.read_pickle(output_path + bulk + '_large_' + label + '.dataset')
-        if(label == 'up'):
-            data['label'] = 1
-        else:
-            data['label'] = 0
         large_final_df = pd.concat([large_final_df,data])
     small_final_df = small_final_df.reset_index(drop=True)
     small_final_df.to_pickle(output_path3 + bulk + '_small.dataset')
