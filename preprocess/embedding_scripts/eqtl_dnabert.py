@@ -49,6 +49,8 @@ def dnabert_embedding(seq_list):
         new = new.reshape([1,new.shape[0]])
         embedding_list.append(new)
     embedding = np.array(embedding_list[0])
+    for item in embedding_list[1:]:
+        embedding = np.concatenate([embedding,item],axis=0)
     return embedding
 
 # sign prediction - split by chr
