@@ -22,10 +22,12 @@ for model in model_size:
     train_data = pd.DataFrame()
     valid_data = pd.DataFrame()
     test_data = pd.DataFrame()
+    # down-sampling one-time
     for i in range(22):
         chr_str = 'chr' + str(i+1)
         chr = i + 1
         slope_data = pd.read_pickle(cd4_path + chr_str + '_' + model + '.dataset')
+        slope_data = slope_data.sample(n=int(len(slope_data)/5),replace=False).reset_index(drop=True)
         if((chr >= 1 and chr <= 9) or (chr >= 14 and chr <= 22)):
             train_data = pd.concat([train_data,slope_data])
         elif(chr >= 12 and chr <= 13):
