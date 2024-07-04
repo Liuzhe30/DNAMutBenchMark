@@ -7,6 +7,7 @@ datasets/reference_genome_hg38/
 datasets/eqtl_datasets/raw/
 datasets/eqtl_datasets/middlefile/
 datasets_embedding/
+preprocess/eQTL_scripts/fix_eqtl.py
 
 
 # middle scripts

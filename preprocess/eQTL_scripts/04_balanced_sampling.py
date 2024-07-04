@@ -142,8 +142,8 @@ for bulk in gtex_list:
     large_final_df.to_pickle(output_path + bulk + '_large_down.dataset')
     print(large_final_df.shape)
 
-# merge bulk datasets: slope prediction
-label_list = ['non','up','down']
+# merge bulk datasets: sign prediction
+label_list = ['up','down']
 for bulk in gtex_list:
     small_final_df = pd.DataFrame()
     middle_final_df = pd.DataFrame()
@@ -151,24 +151,18 @@ for bulk in gtex_list:
     for label in label_list:
         data = pd.read_pickle(output_path + bulk + '_small_' + label + '.dataset')
         if(label == 'up'):
-            data['label'] = 2
-        elif(label == 'non'):
             data['label'] = 1
         elif(label == 'down'):
             data['label'] = 0
         small_final_df = pd.concat([small_final_df,data])
         data = pd.read_pickle(output_path + bulk + '_middle_' + label + '.dataset')
         if(label == 'up'):
-            data['label'] = 2
-        elif(label == 'non'):
             data['label'] = 1
         elif(label == 'down'):
             data['label'] = 0
         middle_final_df = pd.concat([middle_final_df,data])
         data = pd.read_pickle(output_path + bulk + '_large_' + label + '.dataset')
         if(label == 'up'):
-            data['label'] = 2
-        elif(label == 'non'):
             data['label'] = 1
         elif(label == 'down'):
             data['label'] = 0
@@ -180,7 +174,7 @@ for bulk in gtex_list:
     large_final_df = large_final_df.reset_index(drop=True)
     large_final_df.to_pickle(output_path2 + bulk + '_large.dataset')
 
-# merge bulk datasets: sign prediction
+# merge bulk datasets: slope prediction
 label_list = ['up','down']
 for bulk in gtex_list:
     small_final_df = pd.DataFrame()
