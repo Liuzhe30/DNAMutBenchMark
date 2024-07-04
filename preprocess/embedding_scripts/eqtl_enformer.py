@@ -15,6 +15,7 @@ print('test load successful!')
 maxlen = 393216
 fasta_path = '../../datasets/raw/chr_fasta_hg38/'
 compare_tissue_list = ['Esophagus_Mucosa','Heart_Left_Ventricle','Nerve_Tibial']
+compare_tissue_list = ['Nerve_Tibial']
 
 def mutation_center_seq(variant_id):
     chr_str = variant_id.split('_')[0]
@@ -48,9 +49,11 @@ for tissue in compare_tissue_list:
 
     # 1-1000 small
     train_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/small_train.dataset')
+    valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/small_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/small_test.dataset')
     
     train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
     test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
@@ -62,6 +65,17 @@ for tissue in compare_tissue_list:
         result_after = fetch_enformer_results(sequence_after)
         print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+                                        'result_after': result_after}], ignore_index=True)
+
+    for i in range(valid_all.shape[0]):
+        variant_id = valid_all['variant_id'].values[i]
+        sequence_before, sequence_after = mutation_center_seq(variant_id)
+        if(len(sequence_before) != maxlen or len(sequence_after) != maxlen):
+            continue
+        result_before = fetch_enformer_results(sequence_before)
+        result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
+        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -75,13 +89,16 @@ for tissue in compare_tissue_list:
                                         'result_after': result_after}], ignore_index=True)
     
     train_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/small_train.dataset')
+    valid_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/small_valid.dataset')
     test_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/small_test.dataset')
 
     # 1001-10000 middle
     train_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/middle_train.dataset')
+    valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/middle_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/middle_test.dataset')
     
     train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
     test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
@@ -91,7 +108,19 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+                                        'result_after': result_after}], ignore_index=True)
+
+    for i in range(valid_all.shape[0]):
+        variant_id = valid_all['variant_id'].values[i]
+        sequence_before, sequence_after = mutation_center_seq(variant_id)
+        if(len(sequence_before) != maxlen or len(sequence_after) != maxlen):
+            continue
+        result_before = fetch_enformer_results(sequence_before)
+        result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
+        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -105,13 +134,16 @@ for tissue in compare_tissue_list:
                                         'result_after': result_after}], ignore_index=True)
     
     train_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/middle_train.dataset')
+    valid_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/middle_valid.dataset')
     test_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/middle_test.dataset')
 
     # 10001-100000 large
     train_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/large_train.dataset')
+    valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/large_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/sign_prediction/' + tissue + '/large_test.dataset')
     
     train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
     test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
@@ -121,7 +153,19 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+                                        'result_after': result_after}], ignore_index=True)
+
+    for i in range(valid_all.shape[0]):
+        variant_id = valid_all['variant_id'].values[i]
+        sequence_before, sequence_after = mutation_center_seq(variant_id)
+        if(len(sequence_before) != maxlen or len(sequence_after) != maxlen):
+            continue
+        result_before = fetch_enformer_results(sequence_before)
+        result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
+        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -135,8 +179,8 @@ for tissue in compare_tissue_list:
                                         'result_after': result_after}], ignore_index=True)
     
     train_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/large_train.dataset')
+    valid_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/large_valid.dataset')
     test_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/large_test.dataset')
-
 
 
 # slope prediction
@@ -144,9 +188,11 @@ for tissue in compare_tissue_list:
 
     # 1-1000 small
     train_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/small_train.dataset')
+    valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/small_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/small_test.dataset')
     
     train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
     test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
@@ -159,6 +205,17 @@ for tissue in compare_tissue_list:
         print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
+
+    for i in range(valid_all.shape[0]):
+        variant_id = valid_all['variant_id'].values[i]
+        sequence_before, sequence_after = mutation_center_seq(variant_id)
+        if(len(sequence_before) != maxlen or len(sequence_after) != maxlen):
+            continue
+        result_before = fetch_enformer_results(sequence_before)
+        result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
+        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+                                        'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
         variant_id = test_all['variant_id'].values[i]
@@ -167,17 +224,20 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        test_df = test_df._append([{'variant_id': test_all['variant_id'][i], 'label': test_all['label'][i], 'result_before': result_before, 
+        test_df = test_df._append([{'variant_id': test_all['variant_id'][i], 'slope': test_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     train_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/small_train.dataset')
+    valid_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/small_valid.dataset')
     test_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/small_test.dataset')
 
     # 1001-10000 middle
     train_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/middle_train.dataset')
+    valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/middle_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/middle_test.dataset')
     
     train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
     test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
@@ -187,7 +247,19 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+                                        'result_after': result_after}], ignore_index=True)
+
+    for i in range(valid_all.shape[0]):
+        variant_id = valid_all['variant_id'].values[i]
+        sequence_before, sequence_after = mutation_center_seq(variant_id)
+        if(len(sequence_before) != maxlen or len(sequence_after) != maxlen):
+            continue
+        result_before = fetch_enformer_results(sequence_before)
+        result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
+        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -197,17 +269,20 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        test_df = test_df._append([{'variant_id': test_all['variant_id'][i], 'label': test_all['label'][i], 'result_before': result_before, 
+        test_df = test_df._append([{'variant_id': test_all['variant_id'][i], 'slope': test_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     train_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/middle_train.dataset')
+    valid_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/middle_valid.dataset')
     test_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/middle_test.dataset')
 
     # 10001-100000 large
     train_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/large_train.dataset')
+    valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/large_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/large_test.dataset')
     
     train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
     test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
@@ -217,7 +292,19 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+                                        'result_after': result_after}], ignore_index=True)
+
+    for i in range(valid_all.shape[0]):
+        variant_id = valid_all['variant_id'].values[i]
+        sequence_before, sequence_after = mutation_center_seq(variant_id)
+        if(len(sequence_before) != maxlen or len(sequence_after) != maxlen):
+            continue
+        result_before = fetch_enformer_results(sequence_before)
+        result_after = fetch_enformer_results(sequence_after)
+        print(result_before.shape)
+        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -227,8 +314,9 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        test_df = test_df._append([{'variant_id': test_all['variant_id'][i], 'label': test_all['label'][i], 'result_before': result_before, 
+        test_df = test_df._append([{'variant_id': test_all['variant_id'][i], 'slope': test_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     train_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/large_train.dataset')
+    valid_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/large_valid.dataset')
     test_df.to_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/large_test.dataset')
