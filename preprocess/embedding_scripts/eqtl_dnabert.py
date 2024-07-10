@@ -44,14 +44,15 @@ def dnabert_embedding(seq_list):
     for sequence in seq_list:
         inputs = tokenizer(sequence, return_tensors = 'pt')["input_ids"]
         hidden_states = model(inputs)[0] # [1, sequence_length, 768]
-        embedding_mean = torch.mean(hidden_states[0], dim=0)
-        new = embedding_mean.data.cpu().numpy()
-        new = new.reshape([1,new.shape[0]])
+        new = hidden_states.data.cpu().numpy()
+        new = new.reshape([new.shape[1],new.shape[2]])
         embedding_list.append(new)
     embedding = np.array(embedding_list[0])
     for item in embedding_list[1:]:
+        print(item.shape)
         embedding = np.concatenate([embedding,item],axis=0)
-    return embedding
+    avg_embedding = np.mean(embedding, axis=0) # (1,768)
+    return avg_embedding
 
 # sign prediction - split by chr
 file_path = '../../datasets/benchmark_eqtl_dataset/sign_prediction/'
