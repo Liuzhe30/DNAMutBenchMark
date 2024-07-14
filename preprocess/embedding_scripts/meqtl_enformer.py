@@ -48,9 +48,9 @@ for model_size in model_size.keys():
         valid_all = pd.read_pickle('../../datasets/benchmark_meqtl_dataset/slope_prediction/' + tissue + '/' + model_size + '_valid.dataset')
         test_all = pd.read_pickle('../../datasets/benchmark_meqtl_dataset/slope_prediction/' + tissue + '/' + model_size + '_test.dataset')
         
-        train_df = pd.DataFrame(columns=['CpG', 'SNP', 'label', 'result_before', 'result_after'])
-        valid_df = pd.DataFrame(columns=['CpG', 'SNP', 'label', 'result_before', 'result_after'])
-        test_df = pd.DataFrame(columns=['CpG', 'SNP', 'label', 'result_before', 'result_after'])
+        train_df = pd.DataFrame(columns=['CpG', 'SNP', 'Beta', 'result_before', 'result_after'])
+        valid_df = pd.DataFrame(columns=['CpG', 'SNP', 'Beta', 'result_before', 'result_after'])
+        test_df = pd.DataFrame(columns=['CpG', 'SNP', 'Beta', 'result_before', 'result_after'])
 
         for i in range(train_all.shape[0]):
             chr = train_all['CHR'].values[i]
@@ -63,7 +63,7 @@ for model_size in model_size.keys():
             result_before = fetch_enformer_results(sequence_before)
             result_after = fetch_enformer_results(sequence_after)
             print(result_before.shape)
-            train_df = train_df._append([{'CpG': train_all['CpG'][i], 'SNP': train_all['SNP'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+            train_df = train_df._append([{'CpG': train_all['CpG'][i], 'SNP': train_all['SNP'][i], 'Beta': train_all['Beta'][i], 'result_before': result_before, 
                                             'result_after': result_after}], ignore_index=True)
         
         for i in range(valid_all.shape[0]):
@@ -77,7 +77,7 @@ for model_size in model_size.keys():
             result_before = fetch_enformer_results(sequence_before)
             result_after = fetch_enformer_results(sequence_after)
             print(result_before.shape)
-            valid_df = valid_df._append([{'CpG': valid_all['CpG'][i], 'SNP': valid_all['SNP'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+            valid_df = valid_df._append([{'CpG': valid_all['CpG'][i], 'SNP': valid_all['SNP'][i], 'Beta': valid_all['Beta'][i], 'result_before': result_before, 
                                             'result_after': result_after}], ignore_index=True)
         
         for i in range(test_all.shape[0]):
@@ -91,7 +91,7 @@ for model_size in model_size.keys():
             result_before = fetch_enformer_results(sequence_before)
             result_after = fetch_enformer_results(sequence_after)
             print(result_before.shape)
-            test_df = test_df._append([{'CpG': test_all['CpG'][i], 'SNP': test_all['SNP'][i], 'label': test_all['label'][i], 'result_before': result_before, 
+            test_df = test_df._append([{'CpG': test_all['CpG'][i], 'SNP': test_all['SNP'][i], 'Beta': test_all['Beta'][i], 'result_before': result_before, 
                                             'result_after': result_after}], ignore_index=True)
 
         train_df.to_pickle('../../datasets_embedding/enformer/meqtl_datasets/slope_prediction/' + tissue + '/' + model_size + '_train.dataset')
