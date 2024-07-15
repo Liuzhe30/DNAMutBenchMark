@@ -42,8 +42,6 @@ def fetch_enformer_results(sequence):
     result = enformer.predict_on_batch(tensor)['human']
     return result
 
-
-
 # sign prediction
 for tissue in compare_tissue_list:
 
@@ -75,7 +73,7 @@ for tissue in compare_tissue_list:
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
         print(result_before.shape)
-        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -108,7 +106,6 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
 
@@ -120,7 +117,7 @@ for tissue in compare_tissue_list:
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
         print(result_before.shape)
-        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -153,7 +150,6 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
 
@@ -164,8 +160,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
-        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -202,7 +197,6 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
 
@@ -213,8 +207,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
-        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -247,7 +240,6 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
 
@@ -258,8 +250,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
-        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -292,7 +283,6 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
         train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
 
@@ -303,8 +293,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        print(result_before.shape)
-        train_df = train_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
