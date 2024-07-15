@@ -37,7 +37,7 @@ def fetch_enformer_results(sequence):
     seq_array = np.array(seq_list)
     tensor = tf.convert_to_tensor(seq_array, tf.float32)
     tensor = tf.expand_dims(tensor, axis=0)
-    result = enformer.predict_on_batch(tensor)['human']
+    result = np.array(enformer.predict_on_batch(tensor)['human'])
 
     return result
 

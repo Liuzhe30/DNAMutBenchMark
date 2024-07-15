@@ -15,7 +15,6 @@ print('test load successful!')
 maxlen = 393216
 fasta_path = '../../datasets/raw/chr_fasta_hg38/'
 compare_tissue_list = ['Esophagus_Mucosa','Heart_Left_Ventricle','Nerve_Tibial']
-compare_tissue_list = ['Nerve_Tibial']
 
 def mutation_center_seq(variant_id):
     chr_str = variant_id.split('_')[0]
@@ -39,7 +38,7 @@ def fetch_enformer_results(sequence):
     seq_array = np.array(seq_list)
     tensor = tf.convert_to_tensor(seq_array, tf.float32)
     tensor = tf.expand_dims(tensor, axis=0)
-    result = enformer.predict_on_batch(tensor)['human']
+    result = np.array(enformer.predict_on_batch(tensor)['human'])
     return result
 
 # sign prediction
@@ -186,9 +185,9 @@ for tissue in compare_tissue_list:
     valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/small_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/small_test.dataset')
     
-    train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
-    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
-    test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    train_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
+    test_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
         variant_id = train_all['variant_id'].values[i]
@@ -197,7 +196,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+        train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'slope': train_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
 
     for i in range(valid_all.shape[0]):
@@ -207,7 +206,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'slope': valid_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -229,9 +228,9 @@ for tissue in compare_tissue_list:
     valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/middle_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/middle_test.dataset')
     
-    train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
-    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
-    test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    train_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
+    test_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
         variant_id = train_all['variant_id'].values[i]
@@ -240,7 +239,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+        train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'slope': train_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
 
     for i in range(valid_all.shape[0]):
@@ -250,7 +249,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'slope': valid_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
@@ -272,9 +271,9 @@ for tissue in compare_tissue_list:
     valid_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/large_valid.dataset')
     test_all = pd.read_pickle('../../datasets/benchmark_eqtl_dataset/slope_prediction/' + tissue + '/large_test.dataset')
     
-    train_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
-    valid_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
-    test_df = pd.DataFrame(columns=['variant_id', 'label', 'result_before', 'result_after'])
+    train_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
+    valid_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
+    test_df = pd.DataFrame(columns=['variant_id', 'slope', 'result_before', 'result_after'])
 
     for i in range(train_all.shape[0]):
         variant_id = train_all['variant_id'].values[i]
@@ -283,7 +282,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'label': train_all['label'][i], 'result_before': result_before, 
+        train_df = train_df._append([{'variant_id': train_all['variant_id'][i], 'slope': train_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
 
     for i in range(valid_all.shape[0]):
@@ -293,7 +292,7 @@ for tissue in compare_tissue_list:
             continue
         result_before = fetch_enformer_results(sequence_before)
         result_after = fetch_enformer_results(sequence_after)
-        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'label': valid_all['label'][i], 'result_before': result_before, 
+        valid_df = valid_df._append([{'variant_id': valid_all['variant_id'][i], 'slope': valid_all['slope'][i], 'result_before': result_before, 
                                         'result_after': result_after}], ignore_index=True)
     
     for i in range(test_all.shape[0]):
