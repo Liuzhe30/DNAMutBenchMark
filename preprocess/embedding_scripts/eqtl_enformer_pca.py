@@ -15,16 +15,20 @@ for tissue in compare_tissue_list:
             data = pd.read_pickle('../../datasets_embedding/enformer/eqtl_datasets/sign_prediction/' + tissue + '/' + m + '_' + s + '.dataset')
             new_df = pd.DataFrame(columns=['variant_id', 'label', 'enformer_pca_before', 'enformer_pca_after'])
             for i in range(len(data)):
-                result_before = data['result_before'][i]
+                result_before = np.array(data['result_before'][i]) # (1,xxx,5313)
+                result_before = result_before.reshape([result_before.shape[1],result_before.shape[-1]])
                 pca = PCA(n_components=10)
-                enformer_pca_before = pca.fit_transform(result_before) 
+                enformer_pca_before = pca.fit_transform(result_before) # (xxx,10)
 
-                result_after = data['result_after'][i]
+                result_after = np.array(data['result_after'][i])
+                result_after = result_after.reshape([result_after.shape[1],result_after.shape[-1]])
                 pca = PCA(n_components=10)
                 enformer_pca_after = pca.fit_transform(result_after) 
 
                 new_df = new_df._append([{'variant_id': data['variant_id'][i], 'label': data['label'][i], 'enformer_pca_before': result_before, 
                                         'enformer_pca_after': result_after}], ignore_index=True)
+
+                print(new_df.head())
             
             new_df.to_pickle(output_path + '/' + tissue + '/' + m + '_' + s + '.dataset')
 
@@ -36,11 +40,13 @@ for tissue in compare_tissue_list:
             data = pd.read_pickle('../../datasets_embedding/enformer/eqtl_datasets/slope_prediction/' + tissue + '/' + m + '_' + s + '.dataset')
             new_df = pd.DataFrame(columns=['variant_id', 'slope', 'enformer_pca_before', 'enformer_pca_after'])
             for i in range(len(data)):
-                result_before = data['result_before'][i]
+                result_before = np.array(data['result_before'][i])
+                result_before = result_before.reshape([result_before.shape[1],result_before.shape[-1]])
                 pca = PCA(n_components=10)
                 enformer_pca_before = pca.fit_transform(result_before) 
 
-                result_after = data['result_after'][i]
+                result_after = np.array(data['result_after'][i])
+                result_after = result_after.reshape([result_after.shape[1],result_after.shape[-1]])
                 pca = PCA(n_components=10)
                 enformer_pca_after = pca.fit_transform(result_after) 
 

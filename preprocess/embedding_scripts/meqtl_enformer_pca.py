@@ -15,11 +15,13 @@ for m in model_size.keys():
             data = pd.read_pickle('../../datasets_embedding/enformer/meqtl_datasets/slope_prediction/' + tissue + '/' + m + '_' + s + '.dataset')
             new_df = pd.DataFrame(columns=['variant_id', 'Beta', 'enformer_pca_before', 'enformer_pca_after'])
             for i in range(len(data)):
-                result_before = data['result_before'][i]
+                result_before = np.array(data['result_before'][i])
+                result_before = result_before.reshape([result_before.shape[1],result_before.shape[-1]])
                 pca = PCA(n_components=10)
                 enformer_pca_before = pca.fit_transform(result_before) 
 
-                result_after = data['result_after'][i]
+                result_after = np.array(data['result_after'][i])
+                result_after = result_after.reshape([result_after.shape[1],result_after.shape[-1]])
                 pca = PCA(n_components=10)
                 enformer_pca_after = pca.fit_transform(result_after) 
 
