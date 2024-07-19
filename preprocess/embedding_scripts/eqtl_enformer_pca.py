@@ -25,8 +25,8 @@ for tissue in compare_tissue_list:
                 pca = PCA(n_components=10)
                 enformer_pca_after = pca.fit_transform(result_after) 
 
-                new_df = new_df._append([{'variant_id': data['variant_id'][i], 'label': data['label'][i], 'enformer_pca_before': result_before, 
-                                        'enformer_pca_after': result_after}], ignore_index=True)
+                new_df = new_df._append([{'variant_id': data['variant_id'][i], 'label': data['label'][i], 'enformer_pca_before': enformer_pca_before, 
+                                        'enformer_pca_after': enformer_pca_after}], ignore_index=True)
 
                 print(new_df.head())
             
@@ -50,8 +50,8 @@ for tissue in compare_tissue_list:
                 pca = PCA(n_components=10)
                 enformer_pca_after = pca.fit_transform(result_after) 
 
-                new_df = new_df._append([{'variant_id': data['variant_id'][i], 'slope': data['slope'][i], 'enformer_pca_before': result_before, 
-                                        'enformer_pca_after': result_after}], ignore_index=True)
+                new_df = new_df._append([{'variant_id': data['variant_id'][i], 'slope': data['slope'][i], 'enformer_pca_before': enformer_pca_before, 
+                                        'enformer_pca_after': enformer_pca_after}], ignore_index=True)
             
             new_df.to_pickle(output_path + '/' + tissue + '/' + m + '_' + s + '.dataset')
 
