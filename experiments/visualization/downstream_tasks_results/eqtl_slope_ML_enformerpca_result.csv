@@ -210,62 +210,62 @@ large,random forest,enformer_pca,Nerve_Tibial,510,no,0.709,-0.007,0.124
 large,knn,enformer_pca,Nerve_Tibial,510,no,0.775,-0.203,0.034
 large,svm,enformer_pca,Nerve_Tibial,510,no,0.712,-0.016,0
 small,xgboost,enformer_pca,Nerve_Tibial,1030,no,0.785,-0.231,-0.034
-small,lightgbm,enformer_pca,Nerve_Tibial,1030,no,,,
-small,random forest,enformer_pca,Nerve_Tibial,1030,no,,,
-small,knn,enformer_pca,Nerve_Tibial,1030,no,,,
-small,svm,enformer_pca,Nerve_Tibial,1030,no,,,
-middle,xgboost,enformer_pca,Nerve_Tibial,1030,no,,,
-middle,lightgbm,enformer_pca,Nerve_Tibial,1030,no,,,
-middle,random forest,enformer_pca,Nerve_Tibial,1030,no,,,
-middle,knn,enformer_pca,Nerve_Tibial,1030,no,,,
-middle,svm,enformer_pca,Nerve_Tibial,1030,no,,,
-large,xgboost,enformer_pca,Nerve_Tibial,1030,no,,,
-large,lightgbm,enformer_pca,Nerve_Tibial,1030,no,,,
-large,random forest,enformer_pca,Nerve_Tibial,1030,no,,,
-large,knn,enformer_pca,Nerve_Tibial,1030,no,,,
-large,svm,enformer_pca,Nerve_Tibial,1030,no,,,
-small,xgboost,enformer_pca,Nerve_Tibial,17,yes,,,
-small,lightgbm,enformer_pca,Nerve_Tibial,17,yes,,,
-small,random forest,enformer_pca,Nerve_Tibial,17,yes,,,
-small,knn,enformer_pca,Nerve_Tibial,17,yes,,,
-small,svm,enformer_pca,Nerve_Tibial,17,yes,,,
-middle,xgboost,enformer_pca,Nerve_Tibial,17,yes,,,
-middle,lightgbm,enformer_pca,Nerve_Tibial,17,yes,,,
-middle,random forest,enformer_pca,Nerve_Tibial,17,yes,,,
-middle,knn,enformer_pca,Nerve_Tibial,17,yes,,,
-middle,svm,enformer_pca,Nerve_Tibial,17,yes,,,
-large,xgboost,enformer_pca,Nerve_Tibial,17,yes,,,
-large,lightgbm,enformer_pca,Nerve_Tibial,17,yes,,,
-large,random forest,enformer_pca,Nerve_Tibial,17,yes,,,
-large,knn,enformer_pca,Nerve_Tibial,17,yes,,,
-large,svm,enformer_pca,Nerve_Tibial,17,yes,,,
-small,xgboost,enformer_pca,Nerve_Tibial,510,yes,,,
-small,lightgbm,enformer_pca,Nerve_Tibial,510,yes,,,
-small,random forest,enformer_pca,Nerve_Tibial,510,yes,,,
-small,knn,enformer_pca,Nerve_Tibial,510,yes,,,
-small,svm,enformer_pca,Nerve_Tibial,510,yes,,,
-middle,xgboost,enformer_pca,Nerve_Tibial,510,yes,,,
-middle,lightgbm,enformer_pca,Nerve_Tibial,510,yes,,,
-middle,random forest,enformer_pca,Nerve_Tibial,510,yes,,,
-middle,knn,enformer_pca,Nerve_Tibial,510,yes,,,
-middle,svm,enformer_pca,Nerve_Tibial,510,yes,,,
-large,xgboost,enformer_pca,Nerve_Tibial,510,yes,,,
-large,lightgbm,enformer_pca,Nerve_Tibial,510,yes,,,
-large,random forest,enformer_pca,Nerve_Tibial,510,yes,,,
-large,knn,enformer_pca,Nerve_Tibial,510,yes,,,
-large,svm,enformer_pca,Nerve_Tibial,510,yes,,,
-small,xgboost,enformer_pca,Nerve_Tibial,1030,yes,,,
-small,lightgbm,enformer_pca,Nerve_Tibial,1030,yes,,,
-small,random forest,enformer_pca,Nerve_Tibial,1030,yes,,,
-small,knn,enformer_pca,Nerve_Tibial,1030,yes,,,
-small,svm,enformer_pca,Nerve_Tibial,1030,yes,,,
-middle,xgboost,enformer_pca,Nerve_Tibial,1030,yes,,,
-middle,lightgbm,enformer_pca,Nerve_Tibial,1030,yes,,,
-middle,random forest,enformer_pca,Nerve_Tibial,1030,yes,,,
-middle,knn,enformer_pca,Nerve_Tibial,1030,yes,,,
-middle,svm,enformer_pca,Nerve_Tibial,1030,yes,,,
-large,xgboost,enformer_pca,Nerve_Tibial,1030,yes,,,
-large,lightgbm,enformer_pca,Nerve_Tibial,1030,yes,,,
-large,random forest,enformer_pca,Nerve_Tibial,1030,yes,,,
-large,knn,enformer_pca,Nerve_Tibial,1030,yes,,,
-large,svm,enformer_pca,Nerve_Tibial,1030,yes,,,
+small,lightgbm,enformer_pca,Nerve_Tibial,1030,no,0.741,-0.096,0.061
+small,random forest,enformer_pca,Nerve_Tibial,1030,no,0.726,-0.052,0.011
+small,knn,enformer_pca,Nerve_Tibial,1030,no,0.714,-0.018,0.051
+small,svm,enformer_pca,Nerve_Tibial,1030,no,0.761,-0.156,0
+middle,xgboost,enformer_pca,Nerve_Tibial,1030,no,0.88,-0.219,0.028
+middle,lightgbm,enformer_pca,Nerve_Tibial,1030,no,0.836,-0.098,-0.002
+middle,random forest,enformer_pca,Nerve_Tibial,1030,no,0.838,-0.104,-0.07
+middle,knn,enformer_pca,Nerve_Tibial,1030,no,0.805,-0.0177,0.024
+middle,svm,enformer_pca,Nerve_Tibial,1030,no,0.808,-0.027,0
+large,xgboost,enformer_pca,Nerve_Tibial,1030,no,0.784,-0.231,0.038
+large,lightgbm,enformer_pca,Nerve_Tibial,1030,no,0.757,-0.15,-0.028
+large,random forest,enformer_pca,Nerve_Tibial,1030,no,0.724,-0.052,-0.01
+large,knn,enformer_pca,Nerve_Tibial,1030,no,0.775,-0.2,0.034
+large,svm,enformer_pca,Nerve_Tibial,1030,no,0.712,-0.016,0
+small,xgboost,enformer_pca,Nerve_Tibial,17,yes,0.898,0.025,0.2
+small,lightgbm,enformer_pca,Nerve_Tibial,17,yes,0.978,-0.156,-0.177
+small,random forest,enformer_pca,Nerve_Tibial,17,yes,0.913,-0.009,0.055
+small,knn,enformer_pca,Nerve_Tibial,17,yes,0.911,-0.003,0.211
+small,svm,enformer_pca,Nerve_Tibial,17,yes,0.918,-0.019,0
+middle,xgboost,enformer_pca,Nerve_Tibial,17,yes,0.718,0.015,0.291
+middle,lightgbm,enformer_pca,Nerve_Tibial,17,yes,0.665,0.154,0.407
+middle,random forest,enformer_pca,Nerve_Tibial,17,yes,0.804,0.075,0.312
+middle,knn,enformer_pca,Nerve_Tibial,17,yes,0.847,-0.025,-0.008
+middle,svm,enformer_pca,Nerve_Tibial,17,yes,0.816,0.05,0.313
+large,xgboost,enformer_pca,Nerve_Tibial,17,yes,0.803,-0.051,0.238
+large,lightgbm,enformer_pca,Nerve_Tibial,17,yes,0.766,0.167,0.414
+large,random forest,enformer_pca,Nerve_Tibial,17,yes,0.782,0.132,0.377
+large,knn,enformer_pca,Nerve_Tibial,17,yes,0.87,-0.074,-0.015
+large,svm,enformer_pca,Nerve_Tibial,17,yes,0.778,0.142,0.378
+small,xgboost,enformer_pca,Nerve_Tibial,510,yes,0.793,-0.192,-0.027
+small,lightgbm,enformer_pca,Nerve_Tibial,510,yes,0.752,-0.071,0.085
+small,random forest,enformer_pca,Nerve_Tibial,510,yes,0.75,-0.066,-0.05
+small,knn,enformer_pca,Nerve_Tibial,510,yes,0.729,-0.008,0.208
+small,svm,enformer_pca,Nerve_Tibial,510,yes,0.738,-0.032,0
+middle,xgboost,enformer_pca,Nerve_Tibial,510,yes,0.823,-0.088,0.156
+middle,lightgbm,enformer_pca,Nerve_Tibial,510,yes,0.731,0.142,0.476
+middle,random forest,enformer_pca,Nerve_Tibial,510,yes,0.783,0.007,0.19
+middle,knn,enformer_pca,Nerve_Tibial,510,yes,0.798,-0.032,0.089
+middle,svm,enformer_pca,Nerve_Tibial,510,yes,0.803,-0.044,0.064
+large,xgboost,enformer_pca,Nerve_Tibial,510,yes,0.775,0.057,0.363
+large,lightgbm,enformer_pca,Nerve_Tibial,510,yes,0.774,0.058,0.317
+large,random forest,enformer_pca,Nerve_Tibial,510,yes,0.758,0.099,0.362
+large,knn,enformer_pca,Nerve_Tibial,510,yes,0.866,-0.178,0.134
+large,svm,enformer_pca,Nerve_Tibial,510,yes,0.757,0.101,0.354
+small,xgboost,enformer_pca,Nerve_Tibial,1030,yes,0.847,-0.26,-0.076
+small,lightgbm,enformer_pca,Nerve_Tibial,1030,yes,0.833,-0.223,-0.164
+small,random forest,enformer_pca,Nerve_Tibial,1030,yes,0.765,-0.032,0.028
+small,knn,enformer_pca,Nerve_Tibial,1030,yes,0.757,-0.01,0.06
+small,svm,enformer_pca,Nerve_Tibial,1030,yes,0.792,-0.011,0
+middle,xgboost,enformer_pca,Nerve_Tibial,1030,yes,0.799,-0.271,-0.021
+middle,lightgbm,enformer_pca,Nerve_Tibial,1030,yes,0.734,-0.072,0.167
+middle,random forest,enformer_pca,Nerve_Tibial,1030,yes,0.667,0.109,0.365
+middle,knn,enformer_pca,Nerve_Tibial,1030,yes,0.707,-0.037,0.029
+middle,svm,enformer_pca,Nerve_Tibial,1030,yes,0.677,0.082,0.294
+large,xgboost,enformer_pca,Nerve_Tibial,1030,yes,0.724,0.008,0.347
+large,lightgbm,enformer_pca,Nerve_Tibial,1030,yes,0.651,0.2,0.465
+large,random forest,enformer_pca,Nerve_Tibial,1030,yes,0.64,0.225,0.479
+large,knn,enformer_pca,Nerve_Tibial,1030,yes,0.755,-0.078,0.018
+large,svm,enformer_pca,Nerve_Tibial,1030,yes,0.661,0.173,0.42
