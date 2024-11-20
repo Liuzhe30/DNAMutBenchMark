@@ -1,3 +1,0 @@
-﻿size,model,embedding,tissue,seed,shuffled,acc,precision,recall,f1,auc
-small,xgboost,dnabert2,Esophagus_Mucosa,17,no,0.362,0.292,0.35,0.318,0.351
-small,lightgbm,dnabert2,Esophagus_Mucosa,17,no,0.383,0.32,0.4,0.35,0.349

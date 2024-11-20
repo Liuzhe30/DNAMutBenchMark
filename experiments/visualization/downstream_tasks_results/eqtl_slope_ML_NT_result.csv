@@ -1,271 +1,271 @@
-﻿size,model,embedding,tissue,seed,shuffled,rmse,r2,pcc
-small,xgboost,,Esophagus_Mucosa,17,no,,,
-small,lightgbm,,Esophagus_Mucosa,17,no,,,
-small,random forest,,Esophagus_Mucosa,17,no,,,
-small,knn,,Esophagus_Mucosa,17,no,,,
-small,svm,,Esophagus_Mucosa,17,no,,,
-middle,xgboost,,Esophagus_Mucosa,17,no,,,
-middle,lightgbm,,Esophagus_Mucosa,17,no,,,
-middle,random forest,,Esophagus_Mucosa,17,no,,,
-middle,knn,,Esophagus_Mucosa,17,no,,,
-middle,svm,,Esophagus_Mucosa,17,no,,,
-large,xgboost,,Esophagus_Mucosa,17,no,,,
-large,lightgbm,,Esophagus_Mucosa,17,no,,,
-large,random forest,,Esophagus_Mucosa,17,no,,,
-large,knn,,Esophagus_Mucosa,17,no,,,
-large,svm,,Esophagus_Mucosa,17,no,,,
-small,xgboost,,Esophagus_Mucosa,510,no,,,
-small,lightgbm,,Esophagus_Mucosa,510,no,,,
-small,random forest,,Esophagus_Mucosa,510,no,,,
-small,knn,,Esophagus_Mucosa,510,no,,,
-small,svm,,Esophagus_Mucosa,510,no,,,
-middle,xgboost,,Esophagus_Mucosa,510,no,,,
-middle,lightgbm,,Esophagus_Mucosa,510,no,,,
-middle,random forest,,Esophagus_Mucosa,510,no,,,
-middle,knn,,Esophagus_Mucosa,510,no,,,
-middle,svm,,Esophagus_Mucosa,510,no,,,
-large,xgboost,,Esophagus_Mucosa,510,no,,,
-large,lightgbm,,Esophagus_Mucosa,510,no,,,
-large,random forest,,Esophagus_Mucosa,510,no,,,
-large,knn,,Esophagus_Mucosa,510,no,,,
-large,svm,,Esophagus_Mucosa,510,no,,,
-small,xgboost,,Esophagus_Mucosa,1030,no,,,
-small,lightgbm,,Esophagus_Mucosa,1030,no,,,
-small,random forest,,Esophagus_Mucosa,1030,no,,,
-small,knn,,Esophagus_Mucosa,1030,no,,,
-small,svm,,Esophagus_Mucosa,1030,no,,,
-middle,xgboost,,Esophagus_Mucosa,1030,no,,,
-middle,lightgbm,,Esophagus_Mucosa,1030,no,,,
-middle,random forest,,Esophagus_Mucosa,1030,no,,,
-middle,knn,,Esophagus_Mucosa,1030,no,,,
-middle,svm,,Esophagus_Mucosa,1030,no,,,
-large,xgboost,,Esophagus_Mucosa,1030,no,,,
-large,lightgbm,,Esophagus_Mucosa,1030,no,,,
-large,random forest,,Esophagus_Mucosa,1030,no,,,
-large,knn,,Esophagus_Mucosa,1030,no,,,
-large,svm,,Esophagus_Mucosa,1030,no,,,
-small,xgboost,,Esophagus_Mucosa,17,yes,,,
-small,lightgbm,,Esophagus_Mucosa,17,yes,,,
-small,random forest,,Esophagus_Mucosa,17,yes,,,
-small,knn,,Esophagus_Mucosa,17,yes,,,
-small,svm,,Esophagus_Mucosa,17,yes,,,
-middle,xgboost,,Esophagus_Mucosa,17,yes,,,
-middle,lightgbm,,Esophagus_Mucosa,17,yes,,,
-middle,random forest,,Esophagus_Mucosa,17,yes,,,
-middle,knn,,Esophagus_Mucosa,17,yes,,,
-middle,svm,,Esophagus_Mucosa,17,yes,,,
-large,xgboost,,Esophagus_Mucosa,17,yes,,,
-large,lightgbm,,Esophagus_Mucosa,17,yes,,,
-large,random forest,,Esophagus_Mucosa,17,yes,,,
-large,knn,,Esophagus_Mucosa,17,yes,,,
-large,svm,,Esophagus_Mucosa,17,yes,,,
-small,xgboost,,Esophagus_Mucosa,510,yes,,,
-small,lightgbm,,Esophagus_Mucosa,510,yes,,,
-small,random forest,,Esophagus_Mucosa,510,yes,,,
-small,knn,,Esophagus_Mucosa,510,yes,,,
-small,svm,,Esophagus_Mucosa,510,yes,,,
-middle,xgboost,,Esophagus_Mucosa,510,yes,,,
-middle,lightgbm,,Esophagus_Mucosa,510,yes,,,
-middle,random forest,,Esophagus_Mucosa,510,yes,,,
-middle,knn,,Esophagus_Mucosa,510,yes,,,
-middle,svm,,Esophagus_Mucosa,510,yes,,,
-large,xgboost,,Esophagus_Mucosa,510,yes,,,
-large,lightgbm,,Esophagus_Mucosa,510,yes,,,
-large,random forest,,Esophagus_Mucosa,510,yes,,,
-large,knn,,Esophagus_Mucosa,510,yes,,,
-large,svm,,Esophagus_Mucosa,510,yes,,,
-small,xgboost,,Esophagus_Mucosa,1030,yes,,,
-small,lightgbm,,Esophagus_Mucosa,1030,yes,,,
-small,random forest,,Esophagus_Mucosa,1030,yes,,,
-small,knn,,Esophagus_Mucosa,1030,yes,,,
-small,svm,,Esophagus_Mucosa,1030,yes,,,
-middle,xgboost,,Esophagus_Mucosa,1030,yes,,,
-middle,lightgbm,,Esophagus_Mucosa,1030,yes,,,
-middle,random forest,,Esophagus_Mucosa,1030,yes,,,
-middle,knn,,Esophagus_Mucosa,1030,yes,,,
-middle,svm,,Esophagus_Mucosa,1030,yes,,,
-large,xgboost,,Esophagus_Mucosa,1030,yes,,,
-large,lightgbm,,Esophagus_Mucosa,1030,yes,,,
-large,random forest,,Esophagus_Mucosa,1030,yes,,,
-large,knn,,Esophagus_Mucosa,1030,yes,,,
-large,svm,,Esophagus_Mucosa,1030,yes,,,
-small,xgboost,,Heart_Left_Ventricle,17,no,,,
-small,lightgbm,,Heart_Left_Ventricle,17,no,,,
-small,random forest,,Heart_Left_Ventricle,17,no,,,
-small,knn,,Heart_Left_Ventricle,17,no,,,
-small,svm,,Heart_Left_Ventricle,17,no,,,
-middle,xgboost,,Heart_Left_Ventricle,17,no,,,
-middle,lightgbm,,Heart_Left_Ventricle,17,no,,,
-middle,random forest,,Heart_Left_Ventricle,17,no,,,
-middle,knn,,Heart_Left_Ventricle,17,no,,,
-middle,svm,,Heart_Left_Ventricle,17,no,,,
-large,xgboost,,Heart_Left_Ventricle,17,no,,,
-large,lightgbm,,Heart_Left_Ventricle,17,no,,,
-large,random forest,,Heart_Left_Ventricle,17,no,,,
-large,knn,,Heart_Left_Ventricle,17,no,,,
-large,svm,,Heart_Left_Ventricle,17,no,,,
-small,xgboost,,Heart_Left_Ventricle,510,no,,,
-small,lightgbm,,Heart_Left_Ventricle,510,no,,,
-small,random forest,,Heart_Left_Ventricle,510,no,,,
-small,knn,,Heart_Left_Ventricle,510,no,,,
-small,svm,,Heart_Left_Ventricle,510,no,,,
-middle,xgboost,,Heart_Left_Ventricle,510,no,,,
-middle,lightgbm,,Heart_Left_Ventricle,510,no,,,
-middle,random forest,,Heart_Left_Ventricle,510,no,,,
-middle,knn,,Heart_Left_Ventricle,510,no,,,
-middle,svm,,Heart_Left_Ventricle,510,no,,,
-large,xgboost,,Heart_Left_Ventricle,510,no,,,
-large,lightgbm,,Heart_Left_Ventricle,510,no,,,
-large,random forest,,Heart_Left_Ventricle,510,no,,,
-large,knn,,Heart_Left_Ventricle,510,no,,,
-large,svm,,Heart_Left_Ventricle,510,no,,,
-small,xgboost,,Heart_Left_Ventricle,1030,no,,,
-small,lightgbm,,Heart_Left_Ventricle,1030,no,,,
-small,random forest,,Heart_Left_Ventricle,1030,no,,,
-small,knn,,Heart_Left_Ventricle,1030,no,,,
-small,svm,,Heart_Left_Ventricle,1030,no,,,
-middle,xgboost,,Heart_Left_Ventricle,1030,no,,,
-middle,lightgbm,,Heart_Left_Ventricle,1030,no,,,
-middle,random forest,,Heart_Left_Ventricle,1030,no,,,
-middle,knn,,Heart_Left_Ventricle,1030,no,,,
-middle,svm,,Heart_Left_Ventricle,1030,no,,,
-large,xgboost,,Heart_Left_Ventricle,1030,no,,,
-large,lightgbm,,Heart_Left_Ventricle,1030,no,,,
-large,random forest,,Heart_Left_Ventricle,1030,no,,,
-large,knn,,Heart_Left_Ventricle,1030,no,,,
-large,svm,,Heart_Left_Ventricle,1030,no,,,
-small,xgboost,,Heart_Left_Ventricle,17,yes,,,
-small,lightgbm,,Heart_Left_Ventricle,17,yes,,,
-small,random forest,,Heart_Left_Ventricle,17,yes,,,
-small,knn,,Heart_Left_Ventricle,17,yes,,,
-small,svm,,Heart_Left_Ventricle,17,yes,,,
-middle,xgboost,,Heart_Left_Ventricle,17,yes,,,
-middle,lightgbm,,Heart_Left_Ventricle,17,yes,,,
-middle,random forest,,Heart_Left_Ventricle,17,yes,,,
-middle,knn,,Heart_Left_Ventricle,17,yes,,,
-middle,svm,,Heart_Left_Ventricle,17,yes,,,
-large,xgboost,,Heart_Left_Ventricle,17,yes,,,
-large,lightgbm,,Heart_Left_Ventricle,17,yes,,,
-large,random forest,,Heart_Left_Ventricle,17,yes,,,
-large,knn,,Heart_Left_Ventricle,17,yes,,,
-large,svm,,Heart_Left_Ventricle,17,yes,,,
-small,xgboost,,Heart_Left_Ventricle,510,yes,,,
-small,lightgbm,,Heart_Left_Ventricle,510,yes,,,
-small,random forest,,Heart_Left_Ventricle,510,yes,,,
-small,knn,,Heart_Left_Ventricle,510,yes,,,
-small,svm,,Heart_Left_Ventricle,510,yes,,,
-middle,xgboost,,Heart_Left_Ventricle,510,yes,,,
-middle,lightgbm,,Heart_Left_Ventricle,510,yes,,,
-middle,random forest,,Heart_Left_Ventricle,510,yes,,,
-middle,knn,,Heart_Left_Ventricle,510,yes,,,
-middle,svm,,Heart_Left_Ventricle,510,yes,,,
-large,xgboost,,Heart_Left_Ventricle,510,yes,,,
-large,lightgbm,,Heart_Left_Ventricle,510,yes,,,
-large,random forest,,Heart_Left_Ventricle,510,yes,,,
-large,knn,,Heart_Left_Ventricle,510,yes,,,
-large,svm,,Heart_Left_Ventricle,510,yes,,,
-small,xgboost,,Heart_Left_Ventricle,1030,yes,,,
-small,lightgbm,,Heart_Left_Ventricle,1030,yes,,,
-small,random forest,,Heart_Left_Ventricle,1030,yes,,,
-small,knn,,Heart_Left_Ventricle,1030,yes,,,
-small,svm,,Heart_Left_Ventricle,1030,yes,,,
-middle,xgboost,,Heart_Left_Ventricle,1030,yes,,,
-middle,lightgbm,,Heart_Left_Ventricle,1030,yes,,,
-middle,random forest,,Heart_Left_Ventricle,1030,yes,,,
-middle,knn,,Heart_Left_Ventricle,1030,yes,,,
-middle,svm,,Heart_Left_Ventricle,1030,yes,,,
-large,xgboost,,Heart_Left_Ventricle,1030,yes,,,
-large,lightgbm,,Heart_Left_Ventricle,1030,yes,,,
-large,random forest,,Heart_Left_Ventricle,1030,yes,,,
-large,knn,,Heart_Left_Ventricle,1030,yes,,,
-large,svm,,Heart_Left_Ventricle,1030,yes,,,
-small,xgboost,,Nerve_Tibial,17,no,,,
-small,lightgbm,,Nerve_Tibial,17,no,,,
-small,random forest,,Nerve_Tibial,17,no,,,
-small,knn,,Nerve_Tibial,17,no,,,
-small,svm,,Nerve_Tibial,17,no,,,
-middle,xgboost,,Nerve_Tibial,17,no,,,
-middle,lightgbm,,Nerve_Tibial,17,no,,,
-middle,random forest,,Nerve_Tibial,17,no,,,
-middle,knn,,Nerve_Tibial,17,no,,,
-middle,svm,,Nerve_Tibial,17,no,,,
-large,xgboost,,Nerve_Tibial,17,no,,,
-large,lightgbm,,Nerve_Tibial,17,no,,,
-large,random forest,,Nerve_Tibial,17,no,,,
-large,knn,,Nerve_Tibial,17,no,,,
-large,svm,,Nerve_Tibial,17,no,,,
-small,xgboost,,Nerve_Tibial,510,no,,,
-small,lightgbm,,Nerve_Tibial,510,no,,,
-small,random forest,,Nerve_Tibial,510,no,,,
-small,knn,,Nerve_Tibial,510,no,,,
-small,svm,,Nerve_Tibial,510,no,,,
-middle,xgboost,,Nerve_Tibial,510,no,,,
-middle,lightgbm,,Nerve_Tibial,510,no,,,
-middle,random forest,,Nerve_Tibial,510,no,,,
-middle,knn,,Nerve_Tibial,510,no,,,
-middle,svm,,Nerve_Tibial,510,no,,,
-large,xgboost,,Nerve_Tibial,510,no,,,
-large,lightgbm,,Nerve_Tibial,510,no,,,
-large,random forest,,Nerve_Tibial,510,no,,,
-large,knn,,Nerve_Tibial,510,no,,,
-large,svm,,Nerve_Tibial,510,no,,,
-small,xgboost,,Nerve_Tibial,1030,no,,,
-small,lightgbm,,Nerve_Tibial,1030,no,,,
-small,random forest,,Nerve_Tibial,1030,no,,,
-small,knn,,Nerve_Tibial,1030,no,,,
-small,svm,,Nerve_Tibial,1030,no,,,
-middle,xgboost,,Nerve_Tibial,1030,no,,,
-middle,lightgbm,,Nerve_Tibial,1030,no,,,
-middle,random forest,,Nerve_Tibial,1030,no,,,
-middle,knn,,Nerve_Tibial,1030,no,,,
-middle,svm,,Nerve_Tibial,1030,no,,,
-large,xgboost,,Nerve_Tibial,1030,no,,,
-large,lightgbm,,Nerve_Tibial,1030,no,,,
-large,random forest,,Nerve_Tibial,1030,no,,,
-large,knn,,Nerve_Tibial,1030,no,,,
-large,svm,,Nerve_Tibial,1030,no,,,
-small,xgboost,,Nerve_Tibial,17,yes,,,
-small,lightgbm,,Nerve_Tibial,17,yes,,,
-small,random forest,,Nerve_Tibial,17,yes,,,
-small,knn,,Nerve_Tibial,17,yes,,,
-small,svm,,Nerve_Tibial,17,yes,,,
-middle,xgboost,,Nerve_Tibial,17,yes,,,
-middle,lightgbm,,Nerve_Tibial,17,yes,,,
-middle,random forest,,Nerve_Tibial,17,yes,,,
-middle,knn,,Nerve_Tibial,17,yes,,,
-middle,svm,,Nerve_Tibial,17,yes,,,
-large,xgboost,,Nerve_Tibial,17,yes,,,
-large,lightgbm,,Nerve_Tibial,17,yes,,,
-large,random forest,,Nerve_Tibial,17,yes,,,
-large,knn,,Nerve_Tibial,17,yes,,,
-large,svm,,Nerve_Tibial,17,yes,,,
-small,xgboost,,Nerve_Tibial,510,yes,,,
-small,lightgbm,,Nerve_Tibial,510,yes,,,
-small,random forest,,Nerve_Tibial,510,yes,,,
-small,knn,,Nerve_Tibial,510,yes,,,
-small,svm,,Nerve_Tibial,510,yes,,,
-middle,xgboost,,Nerve_Tibial,510,yes,,,
-middle,lightgbm,,Nerve_Tibial,510,yes,,,
-middle,random forest,,Nerve_Tibial,510,yes,,,
-middle,knn,,Nerve_Tibial,510,yes,,,
-middle,svm,,Nerve_Tibial,510,yes,,,
-large,xgboost,,Nerve_Tibial,510,yes,,,
-large,lightgbm,,Nerve_Tibial,510,yes,,,
-large,random forest,,Nerve_Tibial,510,yes,,,
-large,knn,,Nerve_Tibial,510,yes,,,
-large,svm,,Nerve_Tibial,510,yes,,,
-small,xgboost,,Nerve_Tibial,1030,yes,,,
-small,lightgbm,,Nerve_Tibial,1030,yes,,,
-small,random forest,,Nerve_Tibial,1030,yes,,,
-small,knn,,Nerve_Tibial,1030,yes,,,
-small,svm,,Nerve_Tibial,1030,yes,,,
-middle,xgboost,,Nerve_Tibial,1030,yes,,,
-middle,lightgbm,,Nerve_Tibial,1030,yes,,,
-middle,random forest,,Nerve_Tibial,1030,yes,,,
-middle,knn,,Nerve_Tibial,1030,yes,,,
-middle,svm,,Nerve_Tibial,1030,yes,,,
-large,xgboost,,Nerve_Tibial,1030,yes,,,
-large,lightgbm,,Nerve_Tibial,1030,yes,,,
-large,random forest,,Nerve_Tibial,1030,yes,,,
-large,knn,,Nerve_Tibial,1030,yes,,,
-large,svm,,Nerve_Tibial,1030,yes,,,
+size,model,embedding,tissue,seed,shuffled,rmse,r2,pcc
+small,xgboost,NT,Esophagus_Mucosa,17,no,0.81,-0.13,0.182
+small,lightgbm,NT,Esophagus_Mucosa,17,no,0.828,-0.18,0.108
+small,random forest,NT,Esophagus_Mucosa,17,no,0.816,-0.14,-0.04
+small,knn,NT,Esophagus_Mucosa,17,no,0.781,-0.05,0.011
+small,svm,NT,Esophagus_Mucosa,17,no,0.816,-0.14,-0.03
+middle,xgboost,NT,Esophagus_Mucosa,17,no,0.851,-0.24,0.011
+middle,lightgbm,NT,Esophagus_Mucosa,17,no,0.863,-0.27,-0.01
+middle,random forest,NT,Esophagus_Mucosa,17,no,0.839,-0.2,-0.17
+middle,knn,NT,Esophagus_Mucosa,17,no,0.826,-0.17,-0.19
+middle,svm,NT,Esophagus_Mucosa,17,no,0.797,-0.09,0.143
+large,xgboost,NT,Esophagus_Mucosa,17,no,0.839,-0.24,0.036
+large,lightgbm,NT,Esophagus_Mucosa,17,no,0.876,-0.36,-0.21
+large,random forest,NT,Esophagus_Mucosa,17,no,0.815,-0.17,-0.21
+large,knn,NT,Esophagus_Mucosa,17,no,0.78,-0.07,-0.29
+large,svm,NT,Esophagus_Mucosa,17,no,0.774,-0.06,-0.34
+small,xgboost,NT,Esophagus_Mucosa,510,no,0.892,-0.37,-0.02
+small,lightgbm,NT,Esophagus_Mucosa,510,no,0.813,-0.13,0.082
+small,random forest,NT,Esophagus_Mucosa,510,no,0.791,-0.07,0.092
+small,knn,NT,Esophagus_Mucosa,510,no,0.781,-0.05,0.011
+small,svm,NT,Esophagus_Mucosa,510,no,0.816,-0.14,-0.03
+middle,xgboost,NT,Esophagus_Mucosa,510,no,0.851,-0.24,0.011
+middle,lightgbm,NT,Esophagus_Mucosa,510,no,0.83,-0.18,0.11
+middle,random forest,NT,Esophagus_Mucosa,510,no,0.838,-0.2,-0.11
+middle,knn,NT,Esophagus_Mucosa,510,no,0.826,-0.17,-0.13
+middle,svm,NT,Esophagus_Mucosa,510,no,0.797,-0.09,0.143
+large,xgboost,NT,Esophagus_Mucosa,510,no,0.89,-0.4,-0.23
+large,lightgbm,NT,Esophagus_Mucosa,510,no,0.868,-0.33,-0.2
+large,random forest,NT,Esophagus_Mucosa,510,no,0.788,-0.1,-0.1
+large,knn,NT,Esophagus_Mucosa,510,no,0.78,-0.07,-0.29
+large,svm,NT,Esophagus_Mucosa,510,no,0.774,-0.06,-0.34
+small,xgboost,NT,Esophagus_Mucosa,1030,no,0.883,-0.34,-0.04
+small,lightgbm,NT,Esophagus_Mucosa,1030,no,0.828,-0.18,0.108
+small,random forest,NT,Esophagus_Mucosa,1030,no,0.787,-0.06,0.053
+small,knn,NT,Esophagus_Mucosa,1030,no,0.781,-0.05,0.011
+small,svm,NT,Esophagus_Mucosa,1030,no,0.816,-0.14,-0.03
+middle,xgboost,NT,Esophagus_Mucosa,1030,no,0.851,-0.24,0.011
+middle,lightgbm,NT,Esophagus_Mucosa,1030,no,0.892,-0.36,-0.12
+middle,random forest,NT,Esophagus_Mucosa,1030,no,0.838,-0.2,-0.18
+middle,knn,NT,Esophagus_Mucosa,1030,no,0.823,-0.16,-0.16
+middle,svm,NT,Esophagus_Mucosa,1030,no,0.797,-0.09,0.143
+large,xgboost,NT,Esophagus_Mucosa,1030,no,0.825,-0.2,-0.04
+large,lightgbm,NT,Esophagus_Mucosa,1030,no,0.876,-0.36,-0.21
+large,random forest,NT,Esophagus_Mucosa,1030,no,0.793,-0.11,-0.11
+large,knn,NT,Esophagus_Mucosa,1030,no,0.78,-0.07,-0.29
+large,svm,NT,Esophagus_Mucosa,1030,no,0.774,-0.06,-0.34
+small,xgboost,NT,Esophagus_Mucosa,17,yes,0.771,-0.15,0.148
+small,lightgbm,NT,Esophagus_Mucosa,17,yes,0.734,-0.04,0.221
+small,random forest,NT,Esophagus_Mucosa,17,yes,0.727,-0.02,0.138
+small,knn,NT,Esophagus_Mucosa,17,yes,0.72,-0.0,0.032
+small,svm,NT,Esophagus_Mucosa,17,yes,0.763,-0.13,0.117
+middle,xgboost,NT,Esophagus_Mucosa,17,yes,0.716,0.022,0.371
+middle,lightgbm,NT,Esophagus_Mucosa,17,yes,0.686,0.102,0.379
+middle,random forest,NT,Esophagus_Mucosa,17,yes,0.679,0.122,0.364
+middle,knn,NT,Esophagus_Mucosa,17,yes,0.74,-0.04,0.054
+middle,svm,NT,Esophagus_Mucosa,17,yes,0.657,0.177,0.443
+large,xgboost,NT,Esophagus_Mucosa,17,yes,0.785,-0.09,0.325
+large,lightgbm,NT,Esophagus_Mucosa,17,yes,0.746,0.008,0.37
+large,random forest,NT,Esophagus_Mucosa,17,yes,0.707,0.11,0.366
+large,knn,NT,Esophagus_Mucosa,17,yes,0.78,-0.08,-0.3
+large,svm,NT,Esophagus_Mucosa,17,yes,0.695,0.139,0.429
+small,xgboost,NT,Esophagus_Mucosa,510,yes,0.866,-0.32,-0.03
+small,lightgbm,NT,Esophagus_Mucosa,510,yes,0.764,-0.03,0.192
+small,random forest,NT,Esophagus_Mucosa,510,yes,0.737,0.038,0.206
+small,knn,NT,Esophagus_Mucosa,510,yes,0.766,-0.03,-0.07
+small,svm,NT,Esophagus_Mucosa,510,yes,0.761,-0.02,0.173
+middle,xgboost,NT,Esophagus_Mucosa,510,yes,0.741,0.002,0.258
+middle,lightgbm,NT,Esophagus_Mucosa,510,yes,0.678,0.165,0.409
+middle,random forest,NT,Esophagus_Mucosa,510,yes,0.707,0.093,0.306
+middle,knn,NT,Esophagus_Mucosa,510,yes,0.739,0.008,0.106
+middle,svm,NT,Esophagus_Mucosa,510,yes,0.68,0.16,0.403
+large,xgboost,NT,Esophagus_Mucosa,510,yes,0.791,-0.11,0.31
+large,lightgbm,NT,Esophagus_Mucosa,510,yes,0.737,0.034,0.36
+large,random forest,NT,Esophagus_Mucosa,510,yes,0.685,0.164,0.41
+large,knn,NT,Esophagus_Mucosa,510,yes,0.753,-0.0,-0.02
+large,svm,NT,Esophagus_Mucosa,510,yes,0.671,0.197,0.46
+small,xgboost,NT,Esophagus_Mucosa,1030,yes,0.808,-0.33,0.1
+small,lightgbm,NT,Esophagus_Mucosa,1030,yes,0.683,0.042,0.305
+small,random forest,NT,Esophagus_Mucosa,1030,yes,0.655,0.119,0.387
+small,knn,NT,Esophagus_Mucosa,1030,yes,0.699,-0.0,0.118
+small,svm,NT,Esophagus_Mucosa,1030,yes,0.72,-0.06,0.227
+middle,xgboost,NT,Esophagus_Mucosa,1030,yes,0.711,0.143,0.395
+middle,lightgbm,NT,Esophagus_Mucosa,1030,yes,0.723,0.114,0.359
+middle,random forest,NT,Esophagus_Mucosa,1030,yes,0.757,0.029,0.245
+middle,knn,NT,Esophagus_Mucosa,1030,yes,0.78,-0.03,-0.09
+middle,svm,NT,Esophagus_Mucosa,1030,yes,0.715,0.133,0.366
+large,xgboost,NT,Esophagus_Mucosa,1030,yes,0.697,0.071,0.434
+large,lightgbm,NT,Esophagus_Mucosa,1030,yes,0.697,0.071,0.405
+large,random forest,NT,Esophagus_Mucosa,1030,yes,0.686,0.101,0.379
+large,knn,NT,Esophagus_Mucosa,1030,yes,0.743,-0.05,0.025
+large,svm,NT,Esophagus_Mucosa,1030,yes,0.666,0.152,0.461
+small,xgboost,NT,Heart_Left_Ventricle,17,no,0.799,-0.59,-0.33
+small,lightgbm,NT,Heart_Left_Ventricle,17,no,0.657,-0.07,0.059
+small,random forest,NT,Heart_Left_Ventricle,17,no,0.627,0.02,0.153
+small,knn,NT,Heart_Left_Ventricle,17,no,0.632,0.004,0.077
+small,svm,NT,Heart_Left_Ventricle,17,no,0.634,-0.0,-0.2
+middle,xgboost,NT,Heart_Left_Ventricle,17,no,0.824,-0.13,0.078
+middle,lightgbm,NT,Heart_Left_Ventricle,17,no,0.853,-0.21,-0.09
+middle,random forest,NT,Heart_Left_Ventricle,17,no,0.821,-0.12,-0.03
+middle,knn,NT,Heart_Left_Ventricle,17,no,0.773,-0.0,0.283
+middle,svm,NT,Heart_Left_Ventricle,17,no,0.784,-0.02,0.014
+large,xgboost,NT,Heart_Left_Ventricle,17,no,0.72,-0.49,-0.03
+large,lightgbm,NT,Heart_Left_Ventricle,17,no,0.765,-0.68,-0.11
+large,random forest,NT,Heart_Left_Ventricle,17,no,0.69,-0.37,-0.02
+large,knn,NT,Heart_Left_Ventricle,17,no,0.622,-0.11,0.085
+large,svm,NT,Heart_Left_Ventricle,17,no,0.62,-0.1,-0.17
+small,xgboost,NT,Heart_Left_Ventricle,510,no,0.766,-0.46,-0.22
+small,lightgbm,NT,Heart_Left_Ventricle,510,no,0.717,-0.28,-0.16
+small,random forest,NT,Heart_Left_Ventricle,510,no,0.676,-0.13,-0.17
+small,knn,NT,Heart_Left_Ventricle,510,no,0.632,0.004,0.077
+small,svm,NT,Heart_Left_Ventricle,510,no,0.634,-0.0,-0.2
+middle,xgboost,NT,Heart_Left_Ventricle,510,no,0.809,-0.09,0.03
+middle,lightgbm,NT,Heart_Left_Ventricle,510,no,0.78,-0.01,0.149
+middle,random forest,NT,Heart_Left_Ventricle,510,no,0.769,0.01,0.2
+middle,knn,NT,Heart_Left_Ventricle,510,no,0.773,-0.0,0.283
+middle,svm,NT,Heart_Left_Ventricle,510,no,0.784,-0.02,0.014
+large,xgboost,NT,Heart_Left_Ventricle,510,no,0.738,-0.57,-0.12
+large,lightgbm,NT,Heart_Left_Ventricle,510,no,0.741,-0.58,-0.09
+large,random forest,NT,Heart_Left_Ventricle,510,no,0.669,-0.29,-0.04
+large,knn,NT,Heart_Left_Ventricle,510,no,0.622,-0.11,0.085
+large,svm,NT,Heart_Left_Ventricle,510,no,0.62,-0.1,-0.17
+small,xgboost,NT,Heart_Left_Ventricle,1030,no,0.723,-0.3,-0.12
+small,lightgbm,NT,Heart_Left_Ventricle,1030,no,0.717,-0.28,-0.16
+small,random forest,NT,Heart_Left_Ventricle,1030,no,0.662,-0.09,-0.14
+small,knn,NT,Heart_Left_Ventricle,1030,no,0.634,-0.0,0.023
+small,svm,NT,Heart_Left_Ventricle,1030,no,0.634,-0.0,-0.2
+middle,xgboost,NT,Heart_Left_Ventricle,1030,no,0.809,-0.09,0.03
+middle,lightgbm,NT,Heart_Left_Ventricle,1030,no,0.853,-0.21,-0.09
+middle,random forest,NT,Heart_Left_Ventricle,1030,no,0.765,0.018,0.156
+middle,knn,NT,Heart_Left_Ventricle,1030,no,0.792,-0.05,-0.28
+middle,svm,NT,Heart_Left_Ventricle,1030,no,0.784,-0.02,0.014
+large,xgboost,NT,Heart_Left_Ventricle,1030,no,0.75,-0.62,0.011
+large,lightgbm,NT,Heart_Left_Ventricle,1030,no,0.765,-0.68,-0.11
+large,random forest,NT,Heart_Left_Ventricle,1030,no,0.69,-0.37,-0.09
+large,knn,NT,Heart_Left_Ventricle,1030,no,0.622,-0.11,0.085
+large,svm,NT,Heart_Left_Ventricle,1030,no,0.62,-0.1,-0.17
+small,xgboost,NT,Heart_Left_Ventricle,17,yes,0.89,0.157,0.402
+small,lightgbm,NT,Heart_Left_Ventricle,17,yes,0.996,-0.05,0.154
+small,random forest,NT,Heart_Left_Ventricle,17,yes,0.98,-0.02,0.107
+small,knn,NT,Heart_Left_Ventricle,17,yes,0.967,0.005,0.113
+small,svm,NT,Heart_Left_Ventricle,17,yes,0.966,0.008,0.183
+middle,xgboost,NT,Heart_Left_Ventricle,17,yes,0.844,-0.24,0.373
+middle,lightgbm,NT,Heart_Left_Ventricle,17,yes,0.723,0.085,0.507
+middle,random forest,NT,Heart_Left_Ventricle,17,yes,0.694,0.156,0.572
+middle,knn,NT,Heart_Left_Ventricle,17,yes,0.816,-0.16,0.085
+middle,svm,NT,Heart_Left_Ventricle,17,yes,0.674,0.204,0.548
+large,xgboost,NT,Heart_Left_Ventricle,17,yes,0.769,0.041,0.467
+large,lightgbm,NT,Heart_Left_Ventricle,17,yes,0.784,0.004,0.455
+large,random forest,NT,Heart_Left_Ventricle,17,yes,0.699,0.208,0.576
+large,knn,NT,Heart_Left_Ventricle,17,yes,0.878,-0.24,-0.2
+large,svm,NT,Heart_Left_Ventricle,17,yes,0.733,0.128,0.556
+small,xgboost,NT,Heart_Left_Ventricle,510,yes,0.748,-0.26,-0.08
+small,lightgbm,NT,Heart_Left_Ventricle,510,yes,0.751,-0.27,-0.07
+small,random forest,NT,Heart_Left_Ventricle,510,yes,0.736,-0.22,-0.07
+small,knn,NT,Heart_Left_Ventricle,510,yes,0.671,-0.01,0.271
+small,svm,NT,Heart_Left_Ventricle,510,yes,0.671,-0.01,0.101
+middle,xgboost,NT,Heart_Left_Ventricle,510,yes,0.844,-0.02,0.309
+middle,lightgbm,NT,Heart_Left_Ventricle,510,yes,0.723,0.247,0.525
+middle,random forest,NT,Heart_Left_Ventricle,510,yes,0.728,0.236,0.517
+middle,knn,NT,Heart_Left_Ventricle,510,yes,0.838,-0.0,0.275
+middle,svm,NT,Heart_Left_Ventricle,510,yes,0.678,0.337,0.593
+large,xgboost,NT,Heart_Left_Ventricle,510,yes,0.814,0.156,0.474
+large,lightgbm,NT,Heart_Left_Ventricle,510,yes,0.705,0.367,0.613
+large,random forest,NT,Heart_Left_Ventricle,510,yes,0.764,0.257,0.524
+large,knn,NT,Heart_Left_Ventricle,510,yes,0.899,-0.02,-0.08
+large,svm,NT,Heart_Left_Ventricle,510,yes,0.736,0.311,0.56
+small,xgboost,NT,Heart_Left_Ventricle,1030,yes,0.934,-0.47,0.001
+small,lightgbm,NT,Heart_Left_Ventricle,1030,yes,0.86,-0.24,0.072
+small,random forest,NT,Heart_Left_Ventricle,1030,yes,0.823,-0.14,0.128
+small,knn,NT,Heart_Left_Ventricle,1030,yes,0.857,-0.23,-0.06
+small,svm,NT,Heart_Left_Ventricle,1030,yes,0.81,-0.1,0.296
+middle,xgboost,NT,Heart_Left_Ventricle,1030,yes,0.683,-0.02,0.317
+middle,lightgbm,NT,Heart_Left_Ventricle,1030,yes,0.672,0.01,0.263
+middle,random forest,NT,Heart_Left_Ventricle,1030,yes,0.681,-0.01,0.198
+middle,knn,NT,Heart_Left_Ventricle,1030,yes,0.679,-0.01,0.001
+middle,svm,NT,Heart_Left_Ventricle,1030,yes,0.612,0.177,0.44
+large,xgboost,NT,Heart_Left_Ventricle,1030,yes,0.565,0.483,0.707
+large,lightgbm,NT,Heart_Left_Ventricle,1030,yes,0.585,0.446,0.678
+large,random forest,NT,Heart_Left_Ventricle,1030,yes,0.58,0.456,0.714
+large,knn,NT,Heart_Left_Ventricle,1030,yes,0.793,-0.01,-0.05
+large,svm,NT,Heart_Left_Ventricle,1030,yes,0.538,0.531,0.745
+small,xgboost,NT,Nerve_Tibial,17,no,0.754,-0.13,0.16
+small,lightgbm,NT,Nerve_Tibial,17,no,0.778,-0.21,-0.0
+small,random forest,NT,Nerve_Tibial,17,no,0.709,-0.0,0.156
+small,knn,NT,Nerve_Tibial,17,no,0.706,0.004,0.311
+small,svm,NT,Nerve_Tibial,17,no,0.713,-0.01,-0.02
+middle,xgboost,NT,Nerve_Tibial,17,no,0.882,-0.22,0.021
+middle,lightgbm,NT,Nerve_Tibial,17,no,0.83,-0.08,0.101
+middle,random forest,NT,Nerve_Tibial,17,no,0.822,-0.06,0.01
+middle,knn,NT,Nerve_Tibial,17,no,0.821,-0.06,-0.06
+middle,svm,NT,Nerve_Tibial,17,no,0.818,-0.05,0.073
+large,xgboost,NT,Nerve_Tibial,17,no,0.787,-0.24,-0.03
+large,lightgbm,NT,Nerve_Tibial,17,no,0.757,-0.15,-0.03
+large,random forest,NT,Nerve_Tibial,17,no,0.719,-0.03,0.031
+large,knn,NT,Nerve_Tibial,17,no,0.725,-0.05,-0.08
+large,svm,NT,Nerve_Tibial,17,no,0.712,-0.01,-0.04
+small,xgboost,NT,Nerve_Tibial,510,no,0.85,-0.44,-0.25
+small,lightgbm,NT,Nerve_Tibial,510,no,0.822,-0.35,-0.18
+small,random forest,NT,Nerve_Tibial,510,no,0.732,-0.06,7.067
+small,knn,NT,Nerve_Tibial,510,no,0.706,0.004,0.311
+small,svm,NT,Nerve_Tibial,510,no,0.713,-0.01,-0.02
+middle,xgboost,NT,Nerve_Tibial,510,no,0.882,-0.22,0.021
+middle,lightgbm,NT,Nerve_Tibial,510,no,0.854,-0.14,0.031
+middle,random forest,NT,Nerve_Tibial,510,no,0.838,-0.1,0.017
+middle,knn,NT,Nerve_Tibial,510,no,0.821,-0.06,-0.06
+middle,svm,NT,Nerve_Tibial,510,no,0.818,-0.05,0.062
+large,xgboost,NT,Nerve_Tibial,510,no,0.829,-0.37,-0.1
+large,lightgbm,NT,Nerve_Tibial,510,no,0.778,-0.21,-0.09
+large,random forest,NT,Nerve_Tibial,510,no,0.729,-0.06,-0.02
+large,knn,NT,Nerve_Tibial,510,no,0.725,-0.05,-0.08
+large,svm,NT,Nerve_Tibial,510,no,0.713,-0.02,-0.07
+small,xgboost,NT,Nerve_Tibial,1030,no,0.85,-0.44,-0.25
+small,lightgbm,NT,Nerve_Tibial,1030,no,0.778,-0.21,-0.0
+small,random forest,NT,Nerve_Tibial,1030,no,0.701,0.017,0.186
+small,knn,NT,Nerve_Tibial,1030,no,0.712,-0.01,0.38
+small,svm,NT,Nerve_Tibial,1030,no,0.713,-0.01,-0.01
+middle,xgboost,NT,Nerve_Tibial,1030,no,0.882,-0.22,0.021
+middle,lightgbm,NT,Nerve_Tibial,1030,no,0.83,-0.08,0.101
+middle,random forest,NT,Nerve_Tibial,1030,no,0.826,-0.07,-0.0
+middle,knn,NT,Nerve_Tibial,1030,no,0.821,-0.06,-0.06
+middle,svm,NT,Nerve_Tibial,1030,no,0.818,-0.05,0.073
+large,xgboost,NT,Nerve_Tibial,1030,no,0.764,-0.17,0.053
+large,lightgbm,NT,Nerve_Tibial,1030,no,0.774,-0.2,-0.16
+large,random forest,NT,Nerve_Tibial,1030,no,0.73,-0.07,-0.03
+large,knn,NT,Nerve_Tibial,1030,no,0.725,-0.05,-0.08
+large,svm,NT,Nerve_Tibial,1030,no,0.712,-0.01,-0.04
+small,xgboost,NT,Nerve_Tibial,17,yes,0.879,-0.08,0.166
+small,lightgbm,NT,Nerve_Tibial,17,yes,0.863,-0.04,0.218
+small,random forest,NT,Nerve_Tibial,17,yes,0.816,0.066,0.264
+small,knn,NT,Nerve_Tibial,17,yes,0.855,-0.02,-0.09
+small,svm,NT,Nerve_Tibial,17,yes,0.793,0.118,0.35
+middle,xgboost,NT,Nerve_Tibial,17,yes,0.744,-0.13,0.282
+middle,lightgbm,NT,Nerve_Tibial,17,yes,0.721,-0.06,0.275
+middle,random forest,NT,Nerve_Tibial,17,yes,0.672,0.074,0.302
+middle,knn,NT,Nerve_Tibial,17,yes,0.702,-0.01,0.061
+middle,svm,NT,Nerve_Tibial,17,yes,0.683,0.044,0.292
+large,xgboost,NT,Nerve_Tibial,17,yes,0.788,0.039,0.371
+large,lightgbm,NT,Nerve_Tibial,17,yes,0.733,0.169,0.45
+large,random forest,NT,Nerve_Tibial,17,yes,0.722,0.193,0.447
+large,knn,NT,Nerve_Tibial,17,yes,0.819,-0.03,-0.07
+large,svm,NT,Nerve_Tibial,17,yes,0.755,0.119,0.369
+small,xgboost,NT,Nerve_Tibial,510,yes,0.921,-0.15,0.101
+small,lightgbm,NT,Nerve_Tibial,510,yes,0.878,-0.04,0.168
+small,random forest,NT,Nerve_Tibial,510,yes,0.826,0.071,0.273
+small,knn,NT,Nerve_Tibial,510,yes,0.86,-0.0,-0.01
+small,svm,NT,Nerve_Tibial,510,yes,0.807,0.113,0.346
+middle,xgboost,NT,Nerve_Tibial,510,yes,0.668,0.293,0.551
+middle,lightgbm,NT,Nerve_Tibial,510,yes,0.686,0.256,0.509
+middle,random forest,NT,Nerve_Tibial,510,yes,0.681,0.266,0.528
+middle,knn,NT,Nerve_Tibial,510,yes,0.787,0.022,0.154
+middle,svm,NT,Nerve_Tibial,510,yes,0.639,0.355,0.6
+large,xgboost,NT,Nerve_Tibial,510,yes,0.695,0.182,0.507
+large,lightgbm,NT,Nerve_Tibial,510,yes,0.633,0.322,0.582
+large,random forest,NT,Nerve_Tibial,510,yes,0.654,0.275,0.527
+large,knn,NT,Nerve_Tibial,510,yes,0.774,-0.01,0.008
+large,svm,NT,Nerve_Tibial,510,yes,0.588,0.415,0.647
+small,xgboost,NT,Nerve_Tibial,1030,yes,0.748,-0.21,0.118
+small,lightgbm,NT,Nerve_Tibial,1030,yes,0.699,-0.06,0.18
+small,random forest,NT,Nerve_Tibial,1030,yes,0.647,0.09,0.306
+small,knn,NT,Nerve_Tibial,1030,yes,0.675,0.01,0.113
+small,svm,NT,Nerve_Tibial,1030,yes,0.65,0.081,0.295
+middle,xgboost,NT,Nerve_Tibial,1030,yes,0.71,0.254,0.533
+middle,lightgbm,NT,Nerve_Tibial,1030,yes,0.705,0.264,0.524
+middle,random forest,NT,Nerve_Tibial,1030,yes,0.675,0.326,0.612
+middle,knn,NT,Nerve_Tibial,1030,yes,0.807,0.035,0.218
+middle,svm,NT,Nerve_Tibial,1030,yes,0.672,0.332,0.582
+large,xgboost,NT,Nerve_Tibial,1030,yes,0.69,0.241,0.559
+large,lightgbm,NT,Nerve_Tibial,1030,yes,0.63,0.366,0.619
+large,random forest,NT,Nerve_Tibial,1030,yes,0.665,0.294,0.564
+large,knn,NT,Nerve_Tibial,1030,yes,0.794,-0.0,0.057
+large,svm,NT,Nerve_Tibial,1030,yes,0.6,0.427,0.656
