@@ -235,7 +235,7 @@ def fetch_eqtl_sign_results(embedding):
 if __name__ == "__main__":
         
     parser = argparse.ArgumentParser()
-    parser.add_argument('-e', '--embedding', default='dnabert2')
+    parser.add_argument('-e', '--embedding', default='enformer_pca')
     args = parser.parse_args()
     #print(args)    
 
