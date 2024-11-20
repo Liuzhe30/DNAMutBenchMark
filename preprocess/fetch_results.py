@@ -225,8 +225,8 @@ def fetch_eqtl_sign_results(embedding):
             index=0
             for model_size in eqtl_model_size:
                 for ml_model in model_list:
-                    print(tissue,model_size,ml_model,seed,index)
-                    output_df = output_df._append({'size':model_size,'model':ml_model,'embedding':embedding,'tissue':tissue,'seed':intseed,'shuffled':'no',
+                    #print(tissue,model_size,ml_model,seed,index)
+                    output_df = output_df._append({'size':model_size,'model':ml_model,'embedding':embedding,'tissue':tissue,'seed':intseed,'shuffled':'yes',
                     'acc':acc_list[index],'precision':precision_list[index],'recall':recall_list[index],'f1':f1_list[index]},ignore_index=True)
                     index += 1
 
@@ -235,7 +235,7 @@ def fetch_eqtl_sign_results(embedding):
 if __name__ == "__main__":
         
     parser = argparse.ArgumentParser()
-    parser.add_argument('-e', '--embedding', default='enformer_pca')
+    parser.add_argument('-e', '--embedding', default='gpn')
     args = parser.parse_args()
     #print(args)    
 
@@ -243,4 +243,4 @@ if __name__ == "__main__":
 
     #fetch_eqtl_slope_results(embedding)
     #fetch_meqtl_slope_results(embedding)
-    fetch_eqtl_sign_results(embedding)
+    #fetch_eqtl_sign_results(embedding)
