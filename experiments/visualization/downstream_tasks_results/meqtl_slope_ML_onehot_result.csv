@@ -1,0 +1,61 @@
+size,model,embedding,tissue,seed,shuffled,rmse,r2,pcc
+small,xgboost,onehot,CD4,17,no,3.122,-0.07,0.137
+small,lightgbm,onehot,CD4,17,no,3.074,-0.03,0.054
+small,random forest,onehot,CD4,17,no,3.023,-0.0,0.066
+small,knn,onehot,CD4,17,no,3.032,-0.01,0.082
+small,svm,onehot,CD4,17,no,2.996,0.014,0.163
+small,xgboost,onehot,CD4,510,no,3.306,-0.2,0.01
+small,lightgbm,onehot,CD4,510,no,2.976,0.027,0.181
+small,random forest,onehot,CD4,510,no,3.002,0.009,0.137
+small,knn,onehot,CD4,510,no,3.053,-0.02,-0.01
+small,svm,onehot,CD4,510,no,2.996,0.014,0.163
+small,xgboost,onehot,CD4,1030,no,3.305,-0.2,0.011
+small,lightgbm,onehot,CD4,1030,no,2.928,0.057,0.255
+small,random forest,onehot,CD4,1030,no,3.013,0.002,0.102
+small,knn,onehot,CD4,1030,no,3.034,-0.01,0.078
+small,svm,onehot,CD4,1030,no,2.996,0.014,0.163
+small,xgboost,onehot,CD4,17,yes,1.994,0.608,0.791
+small,lightgbm,onehot,CD4,17,yes,1.844,0.665,0.817
+small,random forest,onehot,CD4,17,yes,2.037,0.591,0.802
+small,knn,onehot,CD4,17,yes,3.172,0.01,0.21
+small,svm,onehot,CD4,17,yes,1.889,0.649,0.809
+small,xgboost,onehot,CD4,510,yes,2.281,0.461,0.711
+small,lightgbm,onehot,CD4,510,yes,2.081,0.551,0.749
+small,random forest,onehot,CD4,510,yes,2.157,0.518,0.742
+small,knn,onehot,CD4,510,yes,3.078,0.019,0.193
+small,svm,onehot,CD4,510,yes,2.185,0.505,0.728
+small,xgboost,onehot,CD4,1030,yes,2.058,0.557,0.76
+small,lightgbm,onehot,CD4,1030,yes,1.904,0.621,0.79
+small,random forest,onehot,CD4,1030,yes,2.071,0.552,0.774
+small,knn,onehot,CD4,1030,yes,3.097,-0.0,0.238
+small,svm,onehot,CD4,1030,yes,1.919,0.615,0.788
+small,xgboost,onehot,mono,17,no,13.41,-0.33,-0.07
+small,lightgbm,onehot,mono,17,no,12.72,-0.19,-0.21
+small,random forest,onehot,mono,17,no,12.33,-0.12,-0.11
+small,knn,onehot,mono,17,no,12.13,-0.09,-0.12
+small,svm,onehot,mono,17,no,11.64,-0.0,0.0
+small,xgboost,onehot,mono,510,no,12.39,-0.13,0.13
+small,lightgbm,onehot,mono,510,no,12.83,-0.22,-0.18
+small,random forest,onehot,mono,510,no,11.96,-0.06,-0.14
+small,knn,onehot,mono,510,no,12.13,-0.09,-0.12
+small,svm,onehot,mono,510,no,11.64,-0.0,0.0
+small,xgboost,onehot,mono,1030,no,13.41,-0.33,-0.07
+small,lightgbm,onehot,mono,1030,no,12.72,-0.19,-0.21
+small,random forest,onehot,mono,1030,no,12.38,-0.13,-0.04
+small,knn,onehot,mono,1030,no,12.13,-0.09,-0.12
+small,svm,onehot,mono,1030,no,11.64,-0.0,0.0
+small,xgboost,onehot,mono,17,yes,6.146,0.711,0.849
+small,lightgbm,onehot,mono,17,yes,5.754,0.747,0.865
+small,random forest,onehot,mono,17,yes,6.266,0.7,0.849
+small,knn,onehot,mono,17,yes,11.26,0.031,0.509
+small,svm,onehot,mono,17,yes,5.362,0.78,0.883
+small,xgboost,onehot,mono,510,yes,6.878,0.66,0.819
+small,lightgbm,onehot,mono,510,yes,6.292,0.715,0.846
+small,random forest,onehot,mono,510,yes,7.24,0.623,0.8
+small,knn,onehot,mono,510,yes,11.29,0.084,0.475
+small,svm,onehot,mono,510,yes,6.244,0.72,0.849
+small,xgboost,onehot,mono,1030,yes,5.06,0.815,0.905
+small,lightgbm,onehot,mono,1030,yes,4.769,0.836,0.915
+small,random forest,onehot,mono,1030,yes,5.954,0.745,0.88
+small,knn,onehot,mono,1030,yes,11.0,0.129,0.595
+small,svm,onehot,mono,1030,yes,4.68,0.842,0.918

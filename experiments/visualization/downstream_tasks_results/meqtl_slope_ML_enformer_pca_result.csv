@@ -1,0 +1,61 @@
+﻿size,model,embedding,tissue,seed,shuffled,rmse,r2,pcc
+small,xgboost,enformer_pca,CD4,17,no,3.239,-0.152,0.045
+small,lightgbm,enformer_pca,CD4,17,no,3.095,-0.052,0.062
+small,random forest,enformer_pca,CD4,17,no,3.042,-0.016,0.005
+small,knn,enformer_pca,CD4,17,no,3.052,-0.023,-0.007
+small,svm,enformer_pca,CD4,17,no,3.02,-0.002,0
+small,xgboost,enformer_pca,CD4,510,no,3.173,-0.106,0.124
+small,lightgbm,enformer_pca,CD4,510,no,3.095,-0.052,0.062
+small,random forest,enformer_pca,CD4,510,no,3.072,-0.036,-0.061
+small,knn,enformer_pca,CD4,510,no,3.052,-0.023,-0.007
+small,svm,enformer_pca,CD4,510,no,3.02,-0.002,0
+small,xgboost,enformer_pca,CD4,1030,no,3.425,-0.289,-0.117
+small,lightgbm,enformer_pca,CD4,1030,no,3.13,-0.076,0.017
+small,random forest,enformer_pca,CD4,1030,no,3.062,-0.03,-0.078
+small,knn,enformer_pca,CD4,1030,no,3.052,-0.023,-0.007
+small,svm,enformer_pca,CD4,1030,no,3.02,-0.002,0
+small,xgboost,enformer_pca,CD4,17,yes,1.945,0.621,0.796
+small,lightgbm,enformer_pca,CD4,17,yes,1.952,0.618,0.789
+small,random forest,enformer_pca,CD4,17,yes,1.97,0.612,0.797
+small,knn,enformer_pca,CD4,17,yes,3.114,0.028,0.187
+small,svm,enformer_pca,CD4,17,yes,2.127,0.546,0.744
+small,xgboost,enformer_pca,CD4,510,yes,2.123,0.553,0.756
+small,lightgbm,enformer_pca,CD4,510,yes,2,0.603,0.78
+small,random forest,enformer_pca,CD4,510,yes,2.034,0.586,0.779
+small,knn,enformer_pca,CD4,510,yes,3.116,0.037,0.302
+small,svm,enformer_pca,CD4,510,yes,2.211,0.515,0.726
+small,xgboost,enformer_pca,CD4,1030,yes,1.849,0.645,0.807
+small,lightgbm,enformer_pca,CD4,1030,yes,1.764,0.677,0.823
+small,random forest,enformer_pca,CD4,1030,yes,1.905,0.623,0.809
+small,knn,enformer_pca,CD4,1030,yes,3.058,0.03,0.214
+small,svm,enformer_pca,CD4,1030,yes,2.184,0.505,0.715
+small,xgboost,enformer_pca,mono,17,no,12.748,-0.205,-0.011
+small,lightgbm,enformer_pca,mono,17,no,12.614,-0.18,-0.1
+small,random forest,enformer_pca,mono,17,no,11.412,0.034,0.227
+small,knn,enformer_pca,mono,17,no,11.833,-0.038,0.131
+small,svm,enformer_pca,mono,17,no,11.644,-0.005,0
+small,xgboost,enformer_pca,mono,510,no,11.938,-0.056,0.161
+small,lightgbm,enformer_pca,mono,510,no,12.152,-0.095,0.05
+small,random forest,enformer_pca,mono,510,no,11.4,0.036,0.206
+small,knn,enformer_pca,mono,510,no,11.833,-0.038,0.13
+small,svm,enformer_pca,mono,510,no,11.644,-0.005,0
+small,xgboost,enformer_pca,mono,1030,no,12.838,-0.222,0.014
+small,lightgbm,enformer_pca,mono,1030,no,12.524,-0.163,-0.1
+small,random forest,enformer_pca,mono,1030,no,11.553,0.01,0.125
+small,knn,enformer_pca,mono,1030,no,11.833,-0.038,0.13
+small,svm,enformer_pca,mono,1030,no,11.644,-0.005,0
+small,xgboost,enformer_pca,mono,17,yes,6.172,0.711,0.846
+small,lightgbm,enformer_pca,mono,17,yes,5.716,0.752,0.868
+small,random forest,enformer_pca,mono,17,yes,5.672,0.748,0.869
+small,knn,enformer_pca,mono,17,yes,11.04,0.076,0.312
+small,svm,enformer_pca,mono,17,yes,6.087,0.719,0.849
+small,xgboost,enformer_pca,mono,510,yes,6.842,0.687,0.832
+small,lightgbm,enformer_pca,mono,510,yes,6.262,0.708,0.842
+small,random forest,enformer_pca,mono,510,yes,6.447,0.691,0.833
+small,knn,enformer_pca,mono,510,yes,11.175,0.071,0.366
+small,svm,enformer_pca,mono,510,yes,6.61,0.675,0.823
+small,xgboost,enformer_pca,mono,1030,yes,5.938,0.746,0.865
+small,lightgbm,enformer_pca,mono,1030,yes,5.2,0.805,0.898
+small,random forest,enformer_pca,mono,1030,yes,5.725,0.764,0.88
+small,knn,enformer_pca,mono,1030,yes,11.462,0.053,0.354
+small,svm,enformer_pca,mono,1030,yes,5.613,0.773,0.879

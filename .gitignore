@@ -8,6 +8,8 @@ datasets/eqtl_datasets/raw/
 datasets/eqtl_datasets/middlefile/
 datasets_embedding/
 preprocess/eQTL_scripts/fix_eqtl.py
-
+datasets/benchmark_datasets/enformer.dataset
+datasets/genome_annotation_hg38/
+experiments/visualization/annotation_analysis/images/
 
 # middle scripts
