@@ -1,0 +1,11 @@
+﻿size,model,embedding,tissue,rmse,r2,pcc
+small,Transformer,hyena,CD4,3.0075,0.0065,0.0968
+small,Transformer,NT,CD4,2.9898,0.0181,0.1658
+small,Transformer,gpn,CD4,3.0136,0.0025,0.1
+small,Transformer,enformer-pca,CD4,3.9659,-0.7276,-0.0643
+small,Transformer,dnabert,CD4,2.9872,0.0199,0.1511
+small,Transformer,hyena,mono,11.4464,0.0285,0.1782
+small,Transformer,NT,mono,11.6181,-0.0009,0.0198
+small,Transformer,gpn,mono,11.3579,0.0434,0.2307
+small,Transformer,enformer-pca,mono,12.2425,-0.1114,0.1679
+small,Transformer,dnabert,mono,11.4373,0.03,0.1756
