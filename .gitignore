@@ -11,6 +11,8 @@ preprocess/eQTL_scripts/fix_eqtl.py
 datasets/benchmark_datasets/enformer.dataset
 datasets/genome_annotation_hg38/
 experiments/visualization/annotation_analysis/images/
-experiments/visualization/images/
+experiments/visualization/eqtl-sign-images/
+experiments/visualization/meqtl-slope-images/
+experiments/visualization/eqtl-slope-images/
 
 # middle scripts
