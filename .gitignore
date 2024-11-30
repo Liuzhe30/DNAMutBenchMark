@@ -15,5 +15,6 @@ experiments/visualization/eqtl-sign-images/
 experiments/visualization/meqtl-slope-images/
 experiments/visualization/eqtl-slope-images/
 experiments/images/
+datasets/case_datasets/
 
 # middle scripts
