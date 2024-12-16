@@ -1,0 +1,10 @@
+﻿Tissue,TSS distance,Samples
+Esophagus_Mucosa,1-1k,429
+Esophagus_Mucosa,1k-10k,519
+Esophagus_Mucosa,10k-100k,801
+Heart_Left_Ventricle,1-1k,241
+Heart_Left_Ventricle,1k-10k,251
+Heart_Left_Ventricle,10k-100k,433
+Nerve_Tibial,1-1k,456
+Nerve_Tibial,1k-10k,672
+Nerve_Tibial,10k-100k,1121
