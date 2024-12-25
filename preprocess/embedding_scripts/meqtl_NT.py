@@ -8,8 +8,6 @@ import jax.numpy as jnp
 from nucleotide_transformer.pretrained import get_pretrained_model
 import numpy as np
 
-
-
 def split_sequence(sequence, max_len):
     center_index = len(sequence) // 2
 
